@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FACF9D2D2615BFCC0049AF80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF9D2C2615BFCC0049AF80 /* AppDelegate.swift */; };
+		FACF9D2F2615BFCC0049AF80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF9D2E2615BFCC0049AF80 /* SceneDelegate.swift */; };
+		FACF9D312615BFCC0049AF80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF9D302615BFCC0049AF80 /* ViewController.swift */; };
+		FACF9D342615BFCC0049AF80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF9D322615BFCC0049AF80 /* Main.storyboard */; };
+		FACF9D362615BFCD0049AF80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACF9D352615BFCD0049AF80 /* Assets.xcassets */; };
+		FACF9D392615BFCD0049AF80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF9D372615BFCD0049AF80 /* LaunchScreen.storyboard */; };
+		FACF9D442615BFCD0049AF80 /* quelp_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF9D432615BFCD0049AF80 /* quelp_appTests.swift */; };
+		FACF9D4F2615BFCD0049AF80 /* quelp_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF9D4E2615BFCD0049AF80 /* quelp_appUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FACF9D402615BFCD0049AF80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACF9D212615BFCC0049AF80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACF9D282615BFCC0049AF80;
+			remoteInfo = "quelp-app";
+		};
+		FACF9D4B2615BFCD0049AF80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACF9D212615BFCC0049AF80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACF9D282615BFCC0049AF80;
+			remoteInfo = "quelp-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FACF9D292615BFCC0049AF80 /* quelp-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quelp-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACF9D2C2615BFCC0049AF80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FACF9D2E2615BFCC0049AF80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FACF9D302615BFCC0049AF80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FACF9D332615BFCC0049AF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FACF9D352615BFCD0049AF80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FACF9D382615BFCD0049AF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FACF9D3A2615BFCD0049AF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACF9D3F2615BFCD0049AF80 /* quelp-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quelp-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACF9D432615BFCD0049AF80 /* quelp_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quelp_appTests.swift; sourceTree = "<group>"; };
+		FACF9D452615BFCD0049AF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACF9D4A2615BFCD0049AF80 /* quelp-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quelp-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACF9D4E2615BFCD0049AF80 /* quelp_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quelp_appUITests.swift; sourceTree = "<group>"; };
+		FACF9D502615BFCD0049AF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FACF9D262615BFCC0049AF80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF9D3C2615BFCD0049AF80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF9D472615BFCD0049AF80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FACF9D202615BFCC0049AF80 = {
+			isa = PBXGroup;
+			children = (
+				FACF9D2B2615BFCC0049AF80 /* quelp-app */,
+				FACF9D422615BFCD0049AF80 /* quelp-appTests */,
+				FACF9D4D2615BFCD0049AF80 /* quelp-appUITests */,
+				FACF9D2A2615BFCC0049AF80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FACF9D2A2615BFCC0049AF80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FACF9D292615BFCC0049AF80 /* quelp-app.app */,
+				FACF9D3F2615BFCD0049AF80 /* quelp-appTests.xctest */,
+				FACF9D4A2615BFCD0049AF80 /* quelp-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FACF9D2B2615BFCC0049AF80 /* quelp-app */ = {
+			isa = PBXGroup;
+			children = (
+				FACF9D2C2615BFCC0049AF80 /* AppDelegate.swift */,
+				FACF9D2E2615BFCC0049AF80 /* SceneDelegate.swift */,
+				FACF9D302615BFCC0049AF80 /* ViewController.swift */,
+				FACF9D322615BFCC0049AF80 /* Main.storyboard */,
+				FACF9D352615BFCD0049AF80 /* Assets.xcassets */,
+				FACF9D372615BFCD0049AF80 /* LaunchScreen.storyboard */,
+				FACF9D3A2615BFCD0049AF80 /* Info.plist */,
+			);
+			path = "quelp-app";
+			sourceTree = "<group>";
+		};
+		FACF9D422615BFCD0049AF80 /* quelp-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				FACF9D432615BFCD0049AF80 /* quelp_appTests.swift */,
+				FACF9D452615BFCD0049AF80 /* Info.plist */,
+			);
+			path = "quelp-appTests";
+			sourceTree = "<group>";
+		};
+		FACF9D4D2615BFCD0049AF80 /* quelp-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FACF9D4E2615BFCD0049AF80 /* quelp_appUITests.swift */,
+				FACF9D502615BFCD0049AF80 /* Info.plist */,
+			);
+			path = "quelp-appUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FACF9D282615BFCC0049AF80 /* quelp-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACF9D532615BFCD0049AF80 /* Build configuration list for PBXNativeTarget "quelp-app" */;
+			buildPhases = (
+				FACF9D252615BFCC0049AF80 /* Sources */,
+				FACF9D262615BFCC0049AF80 /* Frameworks */,
+				FACF9D272615BFCC0049AF80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "quelp-app";
+			productName = "quelp-app";
+			productReference = FACF9D292615BFCC0049AF80 /* quelp-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FACF9D3E2615BFCD0049AF80 /* quelp-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACF9D562615BFCD0049AF80 /* Build configuration list for PBXNativeTarget "quelp-appTests" */;
+			buildPhases = (
+				FACF9D3B2615BFCD0049AF80 /* Sources */,
+				FACF9D3C2615BFCD0049AF80 /* Frameworks */,
+				FACF9D3D2615BFCD0049AF80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACF9D412615BFCD0049AF80 /* PBXTargetDependency */,
+			);
+			name = "quelp-appTests";
+			productName = "quelp-appTests";
+			productReference = FACF9D3F2615BFCD0049AF80 /* quelp-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FACF9D492615BFCD0049AF80 /* quelp-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACF9D592615BFCD0049AF80 /* Build configuration list for PBXNativeTarget "quelp-appUITests" */;
+			buildPhases = (
+				FACF9D462615BFCD0049AF80 /* Sources */,
+				FACF9D472615BFCD0049AF80 /* Frameworks */,
+				FACF9D482615BFCD0049AF80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACF9D4C2615BFCD0049AF80 /* PBXTargetDependency */,
+			);
+			name = "quelp-appUITests";
+			productName = "quelp-appUITests";
+			productReference = FACF9D4A2615BFCD0049AF80 /* quelp-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FACF9D212615BFCC0049AF80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FACF9D282615BFCC0049AF80 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FACF9D3E2615BFCD0049AF80 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FACF9D282615BFCC0049AF80;
+					};
+					FACF9D492615BFCD0049AF80 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FACF9D282615BFCC0049AF80;
+					};
+				};
+			};
+			buildConfigurationList = FACF9D242615BFCC0049AF80 /* Build configuration list for PBXProject "quelp-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FACF9D202615BFCC0049AF80;
+			productRefGroup = FACF9D2A2615BFCC0049AF80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FACF9D282615BFCC0049AF80 /* quelp-app */,
+				FACF9D3E2615BFCD0049AF80 /* quelp-appTests */,
+				FACF9D492615BFCD0049AF80 /* quelp-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FACF9D272615BFCC0049AF80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACF9D392615BFCD0049AF80 /* LaunchScreen.storyboard in Resources */,
+				FACF9D362615BFCD0049AF80 /* Assets.xcassets in Resources */,
+				FACF9D342615BFCC0049AF80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF9D3D2615BFCD0049AF80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF9D482615BFCD0049AF80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FACF9D252615BFCC0049AF80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACF9D312615BFCC0049AF80 /* ViewController.swift in Sources */,
+				FACF9D2D2615BFCC0049AF80 /* AppDelegate.swift in Sources */,
+				FACF9D2F2615BFCC0049AF80 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF9D3B2615BFCD0049AF80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACF9D442615BFCD0049AF80 /* quelp_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF9D462615BFCD0049AF80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACF9D4F2615BFCD0049AF80 /* quelp_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FACF9D412615BFCD0049AF80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACF9D282615BFCC0049AF80 /* quelp-app */;
+			targetProxy = FACF9D402615BFCD0049AF80 /* PBXContainerItemProxy */;
+		};
+		FACF9D4C2615BFCD0049AF80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACF9D282615BFCC0049AF80 /* quelp-app */;
+			targetProxy = FACF9D4B2615BFCD0049AF80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FACF9D322615BFCC0049AF80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACF9D332615BFCC0049AF80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FACF9D372615BFCD0049AF80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACF9D382615BFCD0049AF80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FACF9D512615BFCD0049AF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FACF9D522615BFCD0049AF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FACF9D542615BFCD0049AF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quelp-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quantrics.quelp-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FACF9D552615BFCD0049AF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quelp-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quantrics.quelp-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FACF9D572615BFCD0049AF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quelp-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quantrics.quelp-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quelp-app.app/quelp-app";
+			};
+			name = Debug;
+		};
+		FACF9D582615BFCD0049AF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quelp-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quantrics.quelp-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quelp-app.app/quelp-app";
+			};
+			name = Release;
+		};
+		FACF9D5A2615BFCD0049AF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quelp-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quantrics.quelp-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "quelp-app";
+			};
+			name = Debug;
+		};
+		FACF9D5B2615BFCD0049AF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quelp-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quantrics.quelp-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "quelp-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FACF9D242615BFCC0049AF80 /* Build configuration list for PBXProject "quelp-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACF9D512615BFCD0049AF80 /* Debug */,
+				FACF9D522615BFCD0049AF80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACF9D532615BFCD0049AF80 /* Build configuration list for PBXNativeTarget "quelp-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACF9D542615BFCD0049AF80 /* Debug */,
+				FACF9D552615BFCD0049AF80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACF9D562615BFCD0049AF80 /* Build configuration list for PBXNativeTarget "quelp-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACF9D572615BFCD0049AF80 /* Debug */,
+				FACF9D582615BFCD0049AF80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACF9D592615BFCD0049AF80 /* Build configuration list for PBXNativeTarget "quelp-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACF9D5A2615BFCD0049AF80 /* Debug */,
+				FACF9D5B2615BFCD0049AF80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FACF9D212615BFCC0049AF80 /* Project object */;
+}
