@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (4.7.3)
+  - IBAnimatable (6.1.0)
+  - lottie-ios (3.1.8)
+  - Moya (13.0.0):
+    - Moya/Core (= 13.0.0)
+  - Moya/Core (13.0.0):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Result (4.1.0)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.7.3)
+  - IBAnimatable (= 6.1.0)
+  - lottie-ios (= 3.1.8)
+  - Moya (= 13.0.0)
+  - SwiftyJSON (= 4.1.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IBAnimatable
+    - lottie-ios
+    - Moya
+    - Result
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  Moya: 161263550064ff8a4948e8ff63137fd72a876292
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: e3ab69cf8c77b5c3b56a4966af77139136053f21
+
+COCOAPODS: 1.10.1

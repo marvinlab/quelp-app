@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D36809095D80B0DCACF3CD0 /* Pods_quelp_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD64C520297D47A9759CE31 /* Pods_quelp_appTests.framework */; };
+		5BEECDBA5B461342BDBDCA1D /* Pods_quelp_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8796655D4A36891F07ECCD9 /* Pods_quelp_app.framework */; };
+		7A4578AA397E41AE18E18AB0 /* Pods_quelp_app_quelp_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65E73942739E82F51C0EE64 /* Pods_quelp_app_quelp_appUITests.framework */; };
+		FA035AC32615C2A5008484D1 /* BusinessRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA035AC22615C2A5008484D1 /* BusinessRequests.swift */; };
+		FA035ACB2615C2EB008484D1 /* RequestPlugins.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA035ACA2615C2EB008484D1 /* RequestPlugins.swift */; };
+		FA97BA3B2615C7F100B14E86 /* Loading_Circle_Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = FA97BA3A2615C7F100B14E86 /* Loading_Circle_Animation.json */; };
+		FA97BA882615C88A00B14E86 /* QALoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97BA872615C88A00B14E86 /* QALoadingView.swift */; };
+		FA97BA8D2615C89C00B14E86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97BA8C2615C89C00B14E86 /* Constants.swift */; };
 		FACF9D2D2615BFCC0049AF80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF9D2C2615BFCC0049AF80 /* AppDelegate.swift */; };
 		FACF9D2F2615BFCC0049AF80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF9D2E2615BFCC0049AF80 /* SceneDelegate.swift */; };
 		FACF9D312615BFCC0049AF80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF9D302615BFCC0049AF80 /* ViewController.swift */; };
@@ -35,6 +43,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00D014FD6A984A0B4C912962 /* Pods-quelp-app-quelp-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quelp-app-quelp-appUITests.debug.xcconfig"; path = "Target Support Files/Pods-quelp-app-quelp-appUITests/Pods-quelp-app-quelp-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FC6B260E6031E145437849B /* Pods-quelp-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quelp-appTests.release.xcconfig"; path = "Target Support Files/Pods-quelp-appTests/Pods-quelp-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CD64C520297D47A9759CE31 /* Pods_quelp_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quelp_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9095D901FC8E8C0D9D6D0073 /* Pods-quelp-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quelp-app.debug.xcconfig"; path = "Target Support Files/Pods-quelp-app/Pods-quelp-app.debug.xcconfig"; sourceTree = "<group>"; };
+		9B2B9797ACC3C5BEC73519C9 /* Pods-quelp-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quelp-appTests.debug.xcconfig"; path = "Target Support Files/Pods-quelp-appTests/Pods-quelp-appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8796655D4A36891F07ECCD9 /* Pods_quelp_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quelp_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9A035486F8200D82667691 /* Pods-quelp-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quelp-app.release.xcconfig"; path = "Target Support Files/Pods-quelp-app/Pods-quelp-app.release.xcconfig"; sourceTree = "<group>"; };
+		C07D529E2C75FE68C7214CB2 /* Pods-quelp-app-quelp-appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quelp-app-quelp-appUITests.release.xcconfig"; path = "Target Support Files/Pods-quelp-app-quelp-appUITests/Pods-quelp-app-quelp-appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D65E73942739E82F51C0EE64 /* Pods_quelp_app_quelp_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quelp_app_quelp_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA035AC22615C2A5008484D1 /* BusinessRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRequests.swift; sourceTree = "<group>"; };
+		FA035ACA2615C2EB008484D1 /* RequestPlugins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPlugins.swift; sourceTree = "<group>"; };
+		FA97BA3A2615C7F100B14E86 /* Loading_Circle_Animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loading_Circle_Animation.json; sourceTree = "<group>"; };
+		FA97BA872615C88A00B14E86 /* QALoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QALoadingView.swift; sourceTree = "<group>"; };
+		FA97BA8C2615C89C00B14E86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FACF9D292615BFCC0049AF80 /* quelp-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quelp-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACF9D2C2615BFCC0049AF80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACF9D2E2615BFCC0049AF80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BEECDBA5B461342BDBDCA1D /* Pods_quelp_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D36809095D80B0DCACF3CD0 /* Pods_quelp_appTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +94,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A4578AA397E41AE18E18AB0 /* Pods_quelp_app_quelp_appUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11EFC7D4DEEEB9117286AA78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9095D901FC8E8C0D9D6D0073 /* Pods-quelp-app.debug.xcconfig */,
+				AB9A035486F8200D82667691 /* Pods-quelp-app.release.xcconfig */,
+				00D014FD6A984A0B4C912962 /* Pods-quelp-app-quelp-appUITests.debug.xcconfig */,
+				C07D529E2C75FE68C7214CB2 /* Pods-quelp-app-quelp-appUITests.release.xcconfig */,
+				9B2B9797ACC3C5BEC73519C9 /* Pods-quelp-appTests.debug.xcconfig */,
+				3FC6B260E6031E145437849B /* Pods-quelp-appTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		805E7F15C0127B22DB245479 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8796655D4A36891F07ECCD9 /* Pods_quelp_app.framework */,
+				D65E73942739E82F51C0EE64 /* Pods_quelp_app_quelp_appUITests.framework */,
+				5CD64C520297D47A9759CE31 /* Pods_quelp_appTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA035ABE2615C268008484D1 /* RequestManagers */ = {
+			isa = PBXGroup;
+			children = (
+				FA035AC22615C2A5008484D1 /* BusinessRequests.swift */,
+				FA035ACA2615C2EB008484D1 /* RequestPlugins.swift */,
+				FA97BA872615C88A00B14E86 /* QALoadingView.swift */,
+			);
+			path = RequestManagers;
+			sourceTree = "<group>";
+		};
 		FACF9D202615BFCC0049AF80 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +141,8 @@
 				FACF9D422615BFCD0049AF80 /* quelp-appTests */,
 				FACF9D4D2615BFCD0049AF80 /* quelp-appUITests */,
 				FACF9D2A2615BFCC0049AF80 /* Products */,
+				11EFC7D4DEEEB9117286AA78 /* Pods */,
+				805E7F15C0127B22DB245479 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +159,16 @@
 		FACF9D2B2615BFCC0049AF80 /* quelp-app */ = {
 			isa = PBXGroup;
 			children = (
+				FA035ABE2615C268008484D1 /* RequestManagers */,
 				FACF9D2C2615BFCC0049AF80 /* AppDelegate.swift */,
 				FACF9D2E2615BFCC0049AF80 /* SceneDelegate.swift */,
 				FACF9D302615BFCC0049AF80 /* ViewController.swift */,
 				FACF9D322615BFCC0049AF80 /* Main.storyboard */,
 				FACF9D352615BFCD0049AF80 /* Assets.xcassets */,
+				FA97BA3A2615C7F100B14E86 /* Loading_Circle_Animation.json */,
 				FACF9D372615BFCD0049AF80 /* LaunchScreen.storyboard */,
 				FACF9D3A2615BFCD0049AF80 /* Info.plist */,
+				FA97BA8C2615C89C00B14E86 /* Constants.swift */,
 			);
 			path = "quelp-app";
 			sourceTree = "<group>";
@@ -135,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FACF9D532615BFCD0049AF80 /* Build configuration list for PBXNativeTarget "quelp-app" */;
 			buildPhases = (
+				254F4EC8C828C13115B14A86 /* [CP] Check Pods Manifest.lock */,
 				FACF9D252615BFCC0049AF80 /* Sources */,
 				FACF9D262615BFCC0049AF80 /* Frameworks */,
 				FACF9D272615BFCC0049AF80 /* Resources */,
+				104057EC8F7C1CB4BCC9A878 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FACF9D562615BFCD0049AF80 /* Build configuration list for PBXNativeTarget "quelp-appTests" */;
 			buildPhases = (
+				9F7B826C4685C84AE6F0B283 /* [CP] Check Pods Manifest.lock */,
 				FACF9D3B2615BFCD0049AF80 /* Sources */,
 				FACF9D3C2615BFCD0049AF80 /* Frameworks */,
 				FACF9D3D2615BFCD0049AF80 /* Resources */,
@@ -170,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FACF9D592615BFCD0049AF80 /* Build configuration list for PBXNativeTarget "quelp-appUITests" */;
 			buildPhases = (
+				BE30A712E87FB0552413ED47 /* [CP] Check Pods Manifest.lock */,
 				FACF9D462615BFCD0049AF80 /* Sources */,
 				FACF9D472615BFCD0049AF80 /* Frameworks */,
 				FACF9D482615BFCD0049AF80 /* Resources */,
+				7A3564A8F3AAB778B3A70852 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +302,7 @@
 				FACF9D392615BFCD0049AF80 /* LaunchScreen.storyboard in Resources */,
 				FACF9D362615BFCD0049AF80 /* Assets.xcassets in Resources */,
 				FACF9D342615BFCC0049AF80 /* Main.storyboard in Resources */,
+				FA97BA3B2615C7F100B14E86 /* Loading_Circle_Animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,12 +322,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		104057EC8F7C1CB4BCC9A878 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quelp-app/Pods-quelp-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quelp-app/Pods-quelp-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quelp-app/Pods-quelp-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		254F4EC8C828C13115B14A86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quelp-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A3564A8F3AAB778B3A70852 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quelp-app-quelp-appUITests/Pods-quelp-app-quelp-appUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quelp-app-quelp-appUITests/Pods-quelp-app-quelp-appUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quelp-app-quelp-appUITests/Pods-quelp-app-quelp-appUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F7B826C4685C84AE6F0B283 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quelp-appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE30A712E87FB0552413ED47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quelp-app-quelp-appUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FACF9D252615BFCC0049AF80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA035ACB2615C2EB008484D1 /* RequestPlugins.swift in Sources */,
 				FACF9D312615BFCC0049AF80 /* ViewController.swift in Sources */,
+				FA035AC32615C2A5008484D1 /* BusinessRequests.swift in Sources */,
+				FA97BA882615C88A00B14E86 /* QALoadingView.swift in Sources */,
+				FA97BA8D2615C89C00B14E86 /* Constants.swift in Sources */,
 				FACF9D2D2615BFCC0049AF80 /* AppDelegate.swift in Sources */,
 				FACF9D2F2615BFCC0049AF80 /* SceneDelegate.swift in Sources */,
 			);
@@ -433,6 +609,7 @@
 		};
 		FACF9D542615BFCD0049AF80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9095D901FC8E8C0D9D6D0073 /* Pods-quelp-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +628,7 @@
 		};
 		FACF9D552615BFCD0049AF80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB9A035486F8200D82667691 /* Pods-quelp-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +647,7 @@
 		};
 		FACF9D572615BFCD0049AF80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B2B9797ACC3C5BEC73519C9 /* Pods-quelp-appTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +669,7 @@
 		};
 		FACF9D582615BFCD0049AF80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FC6B260E6031E145437849B /* Pods-quelp-appTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +691,7 @@
 		};
 		FACF9D5A2615BFCD0049AF80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D014FD6A984A0B4C912962 /* Pods-quelp-app-quelp-appUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +711,7 @@
 		};
 		FACF9D5B2615BFCD0049AF80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C07D529E2C75FE68C7214CB2 /* Pods-quelp-app-quelp-appUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

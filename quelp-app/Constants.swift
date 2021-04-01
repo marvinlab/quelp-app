@@ -6,3 +6,41 @@
 //
 
 import Foundation
+import UIKit
+
+
+struct Constants {
+    struct Api {
+        static var baseURL = "https://api.yelp.com/v3/"
+        static var getBusinesses = "businesses/search"
+        static var getBusinessDetails = "businesses"
+    }
+}
+
+
+
+func showLoading() {
+    DispatchQueue.main.async {
+        let keyWindow = UIApplication.shared.connectedScenes
+                .filter({$0.activationState == .foregroundActive})
+                .map({$0 as? UIWindowScene})
+                .compactMap({$0})
+                .first?.windows
+                .filter({$0.isKeyWindow}).first
+        
+        if var topController = keyWindow?.rootViewController {
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            hideLoading()
+            let loadingView = QALoadingView.shared
+            loadingView.showOverlay(view: topController.view)
+        }
+    }
+}
+
+func hideLoading() {
+    QALoadingView.shared.hideOverlayView()
+}
+
+
