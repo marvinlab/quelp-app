@@ -19,6 +19,5 @@ class ViewController: UIViewController {
         navCon.view.frame.size = self.view.frame.size
         self.view.addSubview(navCon.view)
     }
-    
 }
 
