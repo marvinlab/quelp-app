@@ -13,7 +13,7 @@ import Lottie
 public class QALoadingView {
     
     var bgView = UIView()
-    var animationView = AnimationView(name: "Loading_Circle_Animation")
+    var animationView = AnimationView(name: "Loading_Airplane_Animation")
     
     class var shared: QALoadingView {
         struct Static {

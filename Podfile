@@ -11,6 +11,9 @@ target 'quelp-app' do
   pod 'IBAnimatable', '6.1.0'
   pod 'SwiftyJSON', '4.1.0'
   pod 'lottie-ios', '3.1.8'
+  pod 'MaterialComponents', '103.1.0'
+  pod 'SnapKit', '4.2.0'
+  pod 'Material', '3.1.8'
 
   target 'quelp-appTests' do
     inherit! :search_paths

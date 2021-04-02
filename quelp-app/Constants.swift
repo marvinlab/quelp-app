@@ -15,9 +15,17 @@ struct Constants {
         static var getBusinesses = "businesses/search"
         static var getBusinessDetails = "businesses"
     }
+    
+    struct AppStrings {
+        static let ratingString = "Rating: %@ (%@ reviews)"
+        static let open = "Open"
+        static let closed = "Closed"
+        static let distanceString = "%@km away"
+        
+        static let emptySearchTextFieldError = "Please enter word to search."
+        static let requestError = "An error occured with the request. Please try again."
+    }
 }
-
-
 
 func showLoading() {
     DispatchQueue.main.async {

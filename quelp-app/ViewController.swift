@@ -9,21 +9,16 @@ import UIKit
 import SwiftyJSON
 
 class ViewController: UIViewController {
-
+    
+    var navCon: UINavigationController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let businessSearchScreen = BusinessSearchViewController(withTitle: "Search")
+        navCon = UINavigationController(rootViewController: businessSearchScreen)
+        navCon.view.frame.size = self.view.frame.size
+        self.view.addSubview(navCon.view)
     }
     
-    @IBAction func testConnection(_ sender: Any) {
-        businessRequestProvider.request(.getBusinesses(location: "kyoto")) { (result) in
-            switch result {
-            case .success:
-                print("Successful")
-            case .failure(let error):
-                print("Error: \(error)")
-            }
-        }
-    }
 }
 
