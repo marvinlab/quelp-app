@@ -37,14 +37,14 @@ class BusinessSearchViewController: UIViewController {
     func searchForResults() {
         self.view.endEditing(true)
         if searchTextField.text?.trimmed != "" {
-            //request
+            searchBusiness()
         } else {
             searchTextField.setErroneousTextField(withErrorDetail: Constants.AppStrings.emptySearchTextFieldError)
         }
     }
     
     func searchBusiness() {
-        businessRequestProvider.request(.getBusinesses(location: "Manila")) { (result) in
+        businessRequestProvider.request(.getBusinesses(location: "Manila", term: searchTextField.text ?? "")) { (result) in
             switch result {
             case .success(let result):
                 let jsonResponse = JSON(result.data)
@@ -56,7 +56,18 @@ class BusinessSearchViewController: UIViewController {
     }
     
     func handleSuccessfulBusinessSearch(response: JSON) {
-        
+        var businesses: [Business] = []
+        if let businessesJSON = response["businesses"].array {
+            businessesJSON.forEach { (business) in
+               let businessModel = try? JSONDecoder().decode(Business.self, from: business.rawData())
+                businesses.append(businessModel!)
+            }
+        }
+        let searchResultViewModel = BusinessSearchResultViewModel(businesses: businesses, keyword: searchTextField.text ?? "")
+        let resultsPage = BusinessSearchResultViewController(withTitle: "Results")
+        resultsPage.businessResultsViewModel = searchResultViewModel
+        self.navigationController?.pushViewController(resultsPage, animated: true
+        )
     }
     
     func handleError() {

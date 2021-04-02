@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func setAppDefaultAppearance() {
         UINavigationBar.appearance().barTintColor = .purple
-        UINavigationBar.appearance().tintColor = .purple
+        UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
     }

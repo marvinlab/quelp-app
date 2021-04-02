@@ -9,7 +9,7 @@ import UIKit
 import IBAnimatable
 
 class BusinessSearchResultCell: UITableViewCell {
-    @IBOutlet weak var businessImageView: UIImageView!
+    @IBOutlet weak var businessImageView: AnimatableImageView!
     @IBOutlet weak var businessNameLabel: AnimatableLabel!
     @IBOutlet weak var businessCategoryLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
@@ -19,14 +19,15 @@ class BusinessSearchResultCell: UITableViewCell {
     
     var businessViewModel: BusinessSearchResultCellViewModel! {
         didSet {
-            businessImageView.loadImageFromURL(businessViewModel.businessImageUrl, failOverImage: nil, showIndicator: true)
-            businessNameLabel.text = businessViewModel.name
-            businessCategoryLabel.text = businessViewModel.categories
-            ratingLabel.text = businessViewModel.ratingString
-            cityLabel.text = businessViewModel.city
-            businessStatusLabel.text = businessViewModel.businessStatusString
-            businessStatusLabel.textColor = businessViewModel.isBusinessClosed ? .red : .green
-            distanceLabel.text = businessViewModel.distance
+            let failover = #imageLiteral(resourceName: "yelp_logo")
+            businessImageView?.loadImageFromURL(businessViewModel.businessImageUrl, failOverImage: failover, showIndicator: false)
+            businessNameLabel?.text = businessViewModel.name
+            businessCategoryLabel?.text = businessViewModel.categories
+            ratingLabel?.text = businessViewModel.ratingString
+            cityLabel?.text = businessViewModel.city
+            businessStatusLabel?.text = businessViewModel.businessStatusString
+            businessStatusLabel?.textColor = businessViewModel.isBusinessClosed ? .red : .green
+            distanceLabel?.text = businessViewModel.distance
         }
     }
     
