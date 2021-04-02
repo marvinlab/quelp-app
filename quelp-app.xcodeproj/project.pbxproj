@@ -16,6 +16,8 @@
 		FA2E72C62616F4D0001FB82C /* BusinessSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E72C42616F4D0001FB82C /* BusinessSearchViewController.swift */; };
 		FA2E72C72616F4D0001FB82C /* BusinessSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2E72C52616F4D0001FB82C /* BusinessSearchViewController.xib */; };
 		FA2E72F526170757001FB82C /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E72F426170757001FB82C /* TextField+Extension.swift */; };
+		FA4BE011261736A2002F4384 /* EmptyResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4BE00F261736A2002F4384 /* EmptyResultCell.swift */; };
+		FA4BE012261736A2002F4384 /* EmptyResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4BE010261736A2002F4384 /* EmptyResultCell.xib */; };
 		FA9708F326170CDD003493C3 /* BusinessSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9708F126170CDD003493C3 /* BusinessSearchResultViewController.swift */; };
 		FA9708F426170CDD003493C3 /* BusinessSearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9708F226170CDD003493C3 /* BusinessSearchResultViewController.xib */; };
 		FA97BA3B2615C7F100B14E86 /* Loading_Airplane_Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = FA97BA3A2615C7F100B14E86 /* Loading_Airplane_Animation.json */; };
@@ -70,6 +72,8 @@
 		FA2E72C42616F4D0001FB82C /* BusinessSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchViewController.swift; sourceTree = "<group>"; };
 		FA2E72C52616F4D0001FB82C /* BusinessSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessSearchViewController.xib; sourceTree = "<group>"; };
 		FA2E72F426170757001FB82C /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
+		FA4BE00F261736A2002F4384 /* EmptyResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResultCell.swift; sourceTree = "<group>"; };
+		FA4BE010261736A2002F4384 /* EmptyResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyResultCell.xib; sourceTree = "<group>"; };
 		FA9708F126170CDD003493C3 /* BusinessSearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchResultViewController.swift; sourceTree = "<group>"; };
 		FA9708F226170CDD003493C3 /* BusinessSearchResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessSearchResultViewController.xib; sourceTree = "<group>"; };
 		FA97BA3A2615C7F100B14E86 /* Loading_Airplane_Animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loading_Airplane_Animation.json; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 				FA15E89B26170FF500BE12FD /* BusinessSearchResultViewModel.swift */,
 				FA2E72C42616F4D0001FB82C /* BusinessSearchViewController.swift */,
 				FA2E72C52616F4D0001FB82C /* BusinessSearchViewController.xib */,
+				FA4BE00F261736A2002F4384 /* EmptyResultCell.swift */,
+				FA4BE010261736A2002F4384 /* EmptyResultCell.xib */,
 			);
 			path = BusinessSearch;
 			sourceTree = "<group>";
@@ -369,6 +375,7 @@
 			files = (
 				FA97BAA52616E18D00B14E86 /* BusinessSearchResultCell.xib in Resources */,
 				FACF9D392615BFCD0049AF80 /* LaunchScreen.storyboard in Resources */,
+				FA4BE012261736A2002F4384 /* EmptyResultCell.xib in Resources */,
 				FA9708F426170CDD003493C3 /* BusinessSearchResultViewController.xib in Resources */,
 				FA2E72C72616F4D0001FB82C /* BusinessSearchViewController.xib in Resources */,
 				FACF9D362615BFCD0049AF80 /* Assets.xcassets in Resources */,
@@ -510,6 +517,7 @@
 				FA97BA9E2615D90300B14E86 /* BusinessModel.swift in Sources */,
 				FA97BAD62616EA4F00B14E86 /* UIImageView+Extension.swift in Sources */,
 				FA97BA882615C88A00B14E86 /* QALoadingView.swift in Sources */,
+				FA4BE011261736A2002F4384 /* EmptyResultCell.swift in Sources */,
 				FA97BA8D2615C89C00B14E86 /* Constants.swift in Sources */,
 				FA97BAB22616E85A00B14E86 /* UIImage+Extension.swift in Sources */,
 				FA2E72C62616F4D0001FB82C /* BusinessSearchViewController.swift in Sources */,

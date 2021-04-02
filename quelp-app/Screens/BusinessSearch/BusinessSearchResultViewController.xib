@@ -20,36 +20,38 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5oh-gr-JBR">
-                    <rect key="frame" x="0.0" y="140" width="414" height="596"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5oh-gr-JBR">
+                    <rect key="frame" x="0.0" y="112" width="414" height="624"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhp-Ea-sG0" customClass="AnimatableView" customModule="IBAnimatable">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 results for &quot;Siomai&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lic-PB-o9u">
-                            <rect key="frame" x="13" y="97" width="179" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We found 100 results for &quot;Siomai&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lic-PB-o9u">
+                            <rect key="frame" x="79" y="39.666666666666664" width="256.33333333333331" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" systemColor="systemPurpleColor"/>
+                            <color key="textColor" red="0.55536826608535561" green="0.24198502823225043" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
+                            <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <size key="shadowOffset" width="0.5" height="0.5"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo1-EP-T2N">
-                            <rect key="frame" x="322" y="93" width="76" height="30"/>
+                            <rect key="frame" x="322" y="65" width="76" height="30"/>
                             <state key="normal" title="Sort Result"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.99183199759999996" green="0.78123656210000003" blue="1" alpha="0.71872477629999998" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstItem="lic-PB-o9u" firstAttribute="leading" secondItem="yhp-Ea-sG0" secondAttribute="leading" constant="13" id="B7n-51-M4C"/>
-                        <constraint firstAttribute="bottom" secondItem="lic-PB-o9u" secondAttribute="bottom" constant="10" id="ChZ-4R-JYq"/>
+                        <constraint firstItem="lic-PB-o9u" firstAttribute="centerY" secondItem="yhp-Ea-sG0" secondAttribute="centerY" id="1JV-w5-rlx"/>
                         <constraint firstAttribute="bottom" secondItem="yo1-EP-T2N" secondAttribute="bottom" constant="5" id="GO7-r1-vt2"/>
                         <constraint firstAttribute="trailing" secondItem="yo1-EP-T2N" secondAttribute="trailing" constant="16" id="HXe-5h-XNK"/>
-                        <constraint firstAttribute="height" constant="128" id="KMj-eF-zw3"/>
+                        <constraint firstAttribute="height" constant="100" id="KMj-eF-zw3"/>
+                        <constraint firstItem="lic-PB-o9u" firstAttribute="centerX" secondItem="yhp-Ea-sG0" secondAttribute="centerX" id="M0E-dS-Bjp"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemPurpleColor"/>
             <constraints>
                 <constraint firstItem="yhp-Ea-sG0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="INg-oM-5cg"/>
                 <constraint firstItem="yhp-Ea-sG0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KgL-f8-8d0"/>
@@ -63,9 +65,6 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

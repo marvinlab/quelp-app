@@ -36,16 +36,28 @@ class BusinessSearchResultViewController: UIViewController {
         self.resultsTable.dataSource = self
         let resultCellNib = UINib(nibName: "BusinessSearchResultCell", bundle: nil)
         self.resultsTable.register(resultCellNib, forCellReuseIdentifier: "BusinessSearchResultCell")
+        let emptyResultCellNib = UINib(nibName: "EmptyResultCell", bundle: nil)
+        self.resultsTable.register(emptyResultCellNib, forCellReuseIdentifier: "EmptyResultCell")
         self.resultsTable.reloadData()
     }
 }
 
 extension BusinessSearchResultViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if businessesCellViewModels.count == 0 {
+            tableView.bounces = false
+            return 1
+        }
         return businessesCellViewModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if businessesCellViewModels.count == 0 {
+            let emptyCell = resultsTable.dequeueReusableCell(withIdentifier: "EmptyResultCell") as! EmptyResultCell
+            return emptyCell
+        }
+        
         let businessCell = resultsTable.dequeueReusableCell(withIdentifier: "BusinessSearchResultCell") as! BusinessSearchResultCell
         businessCell.businessViewModel = businessesCellViewModels[indexPath.row]
         return businessCell

@@ -21,7 +21,7 @@ struct Constants {
         static let open = "Open"
         static let closed = "Closed"
         static let distanceString = "%@ km away"
-        static let keywordResultString = "%@ results for \"%@\""
+        static let keywordResultString = "We found %@ results for \"%@\""
         
         //Error
         static let emptySearchTextFieldError = "Please enter word to search."

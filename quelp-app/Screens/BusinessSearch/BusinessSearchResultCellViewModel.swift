@@ -23,7 +23,15 @@ struct BusinessSearchResultCellViewModel {
         self.businessImageUrl = business.imageUrl ?? ""
         self.name = business.name ?? ""
         self.ratingString = String(format: Constants.AppStrings.ratingString, "\(business.rating ?? 0)", "\(business.reviewCount ?? 0)")
-        self.distance = String(format: Constants.AppStrings.distanceString, business.distance! as CVarArg)
+        
+        let distanceDouble = Double(truncating: business.distance! as NSNumber)
+        let distanceMeter = Measurement(value: distanceDouble, unit: UnitLength.meters)
+        let distanceKm = distanceMeter.converted(to: UnitLength.kilometers)
+        let formatter = MeasurementFormatter()
+        formatter.unitOptions = .providedUnit
+        formatter.numberFormatter.maximumFractionDigits = 2
+        let kmString = formatter.string(from: distanceKm)
+        self.distance = String(format: Constants.AppStrings.distanceString, kmString)
         self.businessStatusString = business.isClosed ?? false ? Constants.AppStrings.closed : Constants.AppStrings.open
         self.isBusinessClosed = business.isClosed ?? false
         var categoryString = ""
