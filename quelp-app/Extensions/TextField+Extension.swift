@@ -13,13 +13,13 @@ extension TextField {
     
     func setDefaultTextField() {
         detail = ""
-        placeholderActiveColor = .purple
-        placeholderNormalColor = .white
-        dividerActiveColor = .purple
-        dividerNormalColor = .white
-        textColor = .white
-        placeholderActiveColor = .purple
-        placeholderNormalColor = .white
+        placeholderActiveColor = .systemPurple
+        placeholderNormalColor = .purple
+        dividerActiveColor = .systemPurple
+        dividerNormalColor = .purple
+        textColor = .purple
+        placeholderActiveColor = .systemPurple
+        placeholderNormalColor = .purple
     }
     
     func setErroneousTextField(withErrorDetail errorString:String) {

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessSearchResultViewController" customModule="quelp_app" customModuleProvider="target">
+            <connections>
+                <outlet property="resultKeywordLabel" destination="lic-PB-o9u" id="Mo3-na-bH0"/>
+                <outlet property="resultsTable" destination="5oh-gr-JBR" id="jf1-yQ-zr1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5oh-gr-JBR">
+                    <rect key="frame" x="0.0" y="112" width="414" height="624"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhp-Ea-sG0" customClass="AnimatableView" customModule="IBAnimatable">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We found 100 results for &quot;Siomai&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lic-PB-o9u">
+                            <rect key="frame" x="79" y="39.666666666666664" width="256.33333333333331" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.55536826608535561" green="0.24198502823225043" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <size key="shadowOffset" width="0.5" height="0.5"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo1-EP-T2N">
+                            <rect key="frame" x="322" y="65" width="76" height="30"/>
+                            <state key="normal" title="Sort Result"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99183199759999996" green="0.78123656210000003" blue="1" alpha="0.71872477629999998" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="lic-PB-o9u" firstAttribute="centerY" secondItem="yhp-Ea-sG0" secondAttribute="centerY" id="1JV-w5-rlx"/>
+                        <constraint firstAttribute="bottom" secondItem="yo1-EP-T2N" secondAttribute="bottom" constant="5" id="GO7-r1-vt2"/>
+                        <constraint firstAttribute="trailing" secondItem="yo1-EP-T2N" secondAttribute="trailing" constant="16" id="HXe-5h-XNK"/>
+                        <constraint firstAttribute="height" constant="100" id="KMj-eF-zw3"/>
+                        <constraint firstItem="lic-PB-o9u" firstAttribute="centerX" secondItem="yhp-Ea-sG0" secondAttribute="centerX" id="M0E-dS-Bjp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yhp-Ea-sG0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="INg-oM-5cg"/>
+                <constraint firstItem="yhp-Ea-sG0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KgL-f8-8d0"/>
+                <constraint firstItem="5oh-gr-JBR" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="M6H-9a-1R6"/>
+                <constraint firstItem="5oh-gr-JBR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NM2-kQ-tBd"/>
+                <constraint firstItem="yhp-Ea-sG0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VHx-GM-Fq2"/>
+                <constraint firstItem="5oh-gr-JBR" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="bGk-kK-mYr"/>
+                <constraint firstItem="5oh-gr-JBR" firstAttribute="top" secondItem="yhp-Ea-sG0" secondAttribute="bottom" constant="12" id="msk-bB-Flf"/>
+            </constraints>
+            <point key="canvasLocation" x="44.927536231884062" y="68.478260869565219"/>
+        </view>
+    </objects>
+</document>
