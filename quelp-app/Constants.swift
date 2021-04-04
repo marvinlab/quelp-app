@@ -21,7 +21,7 @@ struct Constants {
         static let ratingReviewString = "%@ (Based on %@ reviews)"
         static let open = "Open now"
         static let closed = "Closed now"
-        static let distanceString = "%@ km away"
+        static let distanceString = "%@ away"
         static let keywordResultString = "We found %@ results for \"%@\""
         static let noAvailableHoursProvided = "This establishment has not provided business operating hours information"
         

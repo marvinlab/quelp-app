@@ -97,6 +97,17 @@ class BusinessDetailViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    func displayFullSizeImageWithUrl(url: String) {
+        let previewVC = UIViewController()
+        let previewImageView = UIImageView()
+        previewVC.view.backgroundColor = .black
+        previewImageView.frame.size = UIScreen.main.bounds.size
+        previewImageView.contentMode = .scaleAspectFit
+        previewVC.view.addSubview(previewImageView)
+        previewImageView.loadImageFromURL(url, failOverImage: nil, showIndicator: true)
+        self.navigationController?.pushViewController(previewVC, animated: true)
+    }
 
 }
 
@@ -119,5 +130,10 @@ extension BusinessDetailViewController: UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 100, height: 100)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let imageUrl = businessDetailViewModel.galleryImageUrls[indexPath.row]
+        self.displayFullSizeImageWithUrl(url: imageUrl)
     }
 }
