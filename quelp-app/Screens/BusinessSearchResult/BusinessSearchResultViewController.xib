@@ -27,6 +27,9 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhp-Ea-sG0" customClass="AnimatableView" customModule="IBAnimatable">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                     <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple_header" translatesAutoresizingMaskIntoConstraints="NO" id="e6N-BT-vQL">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lic-PB-o9u">
                             <rect key="frame" x="207" y="50" width="0.0" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -49,7 +52,11 @@
                         <constraint firstAttribute="bottom" secondItem="yo1-EP-T2N" secondAttribute="bottom" constant="5" id="GO7-r1-vt2"/>
                         <constraint firstAttribute="trailing" secondItem="yo1-EP-T2N" secondAttribute="trailing" constant="16" id="HXe-5h-XNK"/>
                         <constraint firstAttribute="height" constant="100" id="KMj-eF-zw3"/>
+                        <constraint firstAttribute="trailing" secondItem="e6N-BT-vQL" secondAttribute="trailing" id="LA4-xz-IgA"/>
                         <constraint firstItem="lic-PB-o9u" firstAttribute="centerX" secondItem="yhp-Ea-sG0" secondAttribute="centerX" id="M0E-dS-Bjp"/>
+                        <constraint firstItem="e6N-BT-vQL" firstAttribute="leading" secondItem="yhp-Ea-sG0" secondAttribute="leading" id="WU9-Ec-8W1"/>
+                        <constraint firstItem="e6N-BT-vQL" firstAttribute="top" secondItem="yhp-Ea-sG0" secondAttribute="top" id="ogg-Kt-CW4"/>
+                        <constraint firstAttribute="bottom" secondItem="e6N-BT-vQL" secondAttribute="bottom" id="ul6-Xj-mN1"/>
                     </constraints>
                 </view>
             </subviews>
@@ -67,4 +74,7 @@
             <point key="canvasLocation" x="44.927536231884062" y="68.478260869565219"/>
         </view>
     </objects>
+    <resources>
+        <image name="purple_header" width="570" height="410"/>
+    </resources>
 </document>

@@ -12,7 +12,7 @@ import SwiftyJSON
 var businessRequestProvider = MoyaProvider<BusinessRequests>(plugins: [QAActivityIndicator(), QAResponseLogger(), QAResultParser()])
 
 enum BusinessRequests {
-    case getBusinesses(location: String, term: String)
+    case getBusinesses(coordinates: LocationCoordinates, term: String)
     case getBusinessDetails(id: String)
 }
 
@@ -46,8 +46,8 @@ extension BusinessRequests: TargetType {
     
     var task: Task {
         switch self {
-        case .getBusinesses(location: let location, term: let term):
-            let parameters = ["location": location, "term": term]
+        case .getBusinesses(coordinates: let coordinates, term: let term):
+            let parameters = ["longitude": "\(coordinates.longitude ?? -73.561668)", "latitude": "\(coordinates.latitude ?? 45.508888)", "term": term] as [String : Any]
             return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
         case .getBusinessDetails:
             return .requestPlain

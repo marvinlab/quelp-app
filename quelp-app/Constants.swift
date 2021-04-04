@@ -19,6 +19,7 @@ struct Constants {
     struct AppStrings {
         static let ratingString = "(%@ reviews)"
         static let ratingReviewString = "%@ (Based on %@ reviews)"
+        static let noReviews = "no reviews"
         static let open = "Open now"
         static let closed = "Closed now"
         static let distanceString = "%@ away"

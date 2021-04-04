@@ -8,10 +8,13 @@
 import UIKit
 import Material
 import SwiftyJSON
+import CoreLocation
 
 class BusinessSearchViewController: UIViewController {
 
     @IBOutlet weak var searchTextField: TextField!
+    let locationManager = CLLocationManager()
+    var userCoordinates: LocationCoordinates?
     init(withTitle title: String) {
         super.init(nibName: "BusinessSearchViewController", bundle: nil)
     }
@@ -23,11 +26,30 @@ class BusinessSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextField()
+        self.locationManager.requestWhenInUseAuthorization()
     }
     
     func setupTextField() {
         searchTextField.delegate = self
         searchTextField.setDefaultTextField()
+    }
+    
+    func checkUserLocation() {
+        switch locationManager.authorizationStatus {
+        case .restricted, .denied, .notDetermined:
+            userCoordinates = LocationCoordinates()
+            userCoordinates?.longitude = -73.561668
+            userCoordinates?.latitude = 45.508888
+        default:
+            if locationManager.delegate == nil {
+                locationManager.delegate = self
+                locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+                locationManager.startUpdatingLocation()
+            }
+            userCoordinates = LocationCoordinates()
+            userCoordinates?.longitude = locationManager.location?.coordinate.longitude
+            userCoordinates?.latitude = locationManager.location?.coordinate.latitude
+        }
     }
 
     @IBAction func searchAction(_ sender: Any) {
@@ -35,6 +57,7 @@ class BusinessSearchViewController: UIViewController {
     }
     
     func searchForResults() {
+        checkUserLocation()
         self.view.endEditing(true)
         if searchTextField.text?.trimmed != "" {
             searchBusiness()
@@ -44,7 +67,7 @@ class BusinessSearchViewController: UIViewController {
     }
     
     func searchBusiness() {
-        businessRequestProvider.request(.getBusinesses(location: "Manila", term: searchTextField.text ?? "")) { (result) in
+        businessRequestProvider.request(.getBusinesses(coordinates: userCoordinates!, term: searchTextField.text ?? "")) { (result) in
             switch result {
             case .success(let result):
                 let jsonResponse = JSON(result.data)
@@ -85,5 +108,21 @@ extension BusinessSearchViewController: TextFieldDelegate {
     
     func textField(textField: TextField, didChange text: String?) {
         searchTextField.setDefaultTextField()
+    }
+}
+
+extension BusinessSearchViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        let actualCoordinates = LocationCoordinates()
+        actualCoordinates.longitude = locValue.longitude
+        actualCoordinates.latitude = locValue.latitude
+        self.userCoordinates = actualCoordinates
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        userCoordinates = LocationCoordinates()
+        userCoordinates?.longitude = -73.561668
+        userCoordinates?.latitude = 45.508888
     }
 }

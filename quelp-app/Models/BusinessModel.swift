@@ -57,9 +57,9 @@ class Business: Codable {
     }
 }
 
-class LocationCoordinates: Codable {
-    let latitude: Double?
-    let longitude: Double?
+class LocationCoordinates: NSObject, Codable {
+    var latitude: Double?
+    var longitude: Double?
 }
 
 class BusinessCategory: Codable {

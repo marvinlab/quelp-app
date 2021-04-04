@@ -62,5 +62,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This app needs to use your location for accurate search results</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app needs to use your location for accurate search results</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app needs to use your location for accurate search results</string>
 </dict>
 </plist>

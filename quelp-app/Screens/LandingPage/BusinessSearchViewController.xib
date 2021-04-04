@@ -27,7 +27,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Buiness Name / Cuisine / City"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Business Name / Cuisine type / Category"/>
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNn-MF-U6s" customClass="FlatButton" customModule="Material">
@@ -65,8 +65,8 @@
                             <color key="textColor" systemColor="systemPurpleColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not sure what to look for? Try searching &quot;Japanese Cuisine&quot; or &quot;New York City&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5K-vu-m8z" customClass="AnimatableLabel" customModule="IBAnimatable">
-                            <rect key="frame" x="33" y="523.33333333333337" width="348" height="40.666666666666629"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not sure what to look for? Try searching &quot;Japanese Cuisine&quot; or something more specific like &quot;Sushi&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5K-vu-m8z" customClass="AnimatableLabel" customModule="IBAnimatable">
+                            <rect key="frame" x="33" y="523.33333333333337" width="348" height="61"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" systemColor="systemPurpleColor"/>
                             <nil key="highlightedColor"/>
@@ -125,7 +125,7 @@
             <size key="intrinsicContentSize" width="51" height="11"/>
         </designable>
         <designable name="z5K-vu-m8z">
-            <size key="intrinsicContentSize" width="600.66666666666663" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="756.66666666666663" height="20.333333333333332"/>
         </designable>
     </designables>
     <resources>

@@ -32,7 +32,7 @@ class BusinessSearchResultViewController: UIViewController {
         }
     }
     var pickerDummyTextfield: UITextField!
-    var pickerSelectedSort: SortingCategory!
+    var pickerSelectedSort: SortingCategory = .distanceNearFirst
     
     init(withTitle title: String) {
         super.init(nibName: "BusinessSearchResultViewController", bundle: nil)
@@ -66,7 +66,7 @@ class BusinessSearchResultViewController: UIViewController {
     }
     
     func setInitialSortButton() {
-        if businessesCellViewModels.count == 0 {
+        if businessesCellViewModels.count <= 1 {
             sortButton.isHidden = true
             sortButton.isEnabled = false
             return
@@ -198,6 +198,6 @@ extension BusinessSearchResultViewController: UIPickerViewDelegate, UIPickerView
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let category = SortingCategory(rawValue: row)
-        pickerSelectedSort = category
+        pickerSelectedSort = category!
     }
 }
