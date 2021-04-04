@@ -38,9 +38,10 @@ struct BusinessSearchResultCellViewModel {
         self.businessStatusString = business.isClosed ?? false ? Constants.AppStrings.closed : Constants.AppStrings.open
         self.isBusinessClosed = business.isClosed ?? false
         var categoryString = ""
-        business.categories?.forEach { (category) in
-            categoryString.append("\(category.title ?? ""),")
-        }
+        let stringCategories: [String] = (business.categories ?? []).map({
+            return $0.title ?? ""
+        })
+        categoryString = stringCategories.joined(separator: ", ")
         self.categories = categoryString
         self.city = business.location?.city ?? ""
         let starRatingFileName = "small_\(business.rating ?? 0)"

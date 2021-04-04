@@ -18,10 +18,12 @@ struct Constants {
     
     struct AppStrings {
         static let ratingString = "(%@ reviews)"
-        static let open = "Open"
-        static let closed = "Closed"
+        static let ratingReviewString = "%@ (Based on %@ reviews)"
+        static let open = "Open now"
+        static let closed = "Closed now"
         static let distanceString = "%@ km away"
         static let keywordResultString = "We found %@ results for \"%@\""
+        static let noAvailableHoursProvided = "This establishmemt has not provided business operating hours information"
         
         //Error
         static let emptySearchTextFieldError = "Please enter word to search."

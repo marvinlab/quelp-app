@@ -46,6 +46,7 @@ class BusinessDetailViewController: UIViewController {
         let businessLatitude = self.businessDetailViewModel.coordinates.latitude ?? 0.0
         let businessLongitude = self.businessDetailViewModel.coordinates.longitude ?? 0.0
         annotation.coordinate = CLLocationCoordinate2D(latitude: businessLatitude, longitude: businessLongitude)
+        annotation.title = self.businessDetailViewModel.businessName
         self.mapView?.addAnnotation(annotation)
         let locationRegion = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
         self.mapView?.setRegion(locationRegion, animated: false)

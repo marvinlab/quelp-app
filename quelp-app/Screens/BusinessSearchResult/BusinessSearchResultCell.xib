@@ -20,7 +20,15 @@
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-h7-Xzs" customClass="AnimatableView" customModule="IBAnimatable">
                         <rect key="frame" x="2.5" y="2.5" width="469" height="232.5"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yelp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="xj1-iC-cmi" customClass="AnimatableImageView" customModule="IBAnimatable">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yelp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="nrX-37-nAG" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <rect key="frame" x="0.0" y="0.0" width="469" height="137"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xj1-iC-cmi" customClass="AnimatableImageView" customModule="IBAnimatable">
                                 <rect key="frame" x="0.0" y="0.0" width="469" height="137"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="137" id="AtV-PI-TZW"/>
@@ -90,6 +98,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="nrX-37-nAG" firstAttribute="top" secondItem="xj1-iC-cmi" secondAttribute="top" id="0oW-TP-P9w"/>
                             <constraint firstItem="RQx-ct-6Uf" firstAttribute="leading" secondItem="lXV-ZZ-0zs" secondAttribute="leading" constant="8" id="1KG-nT-Wmz"/>
                             <constraint firstAttribute="trailing" secondItem="xj1-iC-cmi" secondAttribute="trailing" id="4mw-1r-Y3d"/>
                             <constraint firstItem="vCY-7C-tEt" firstAttribute="top" secondItem="lXV-ZZ-0zs" secondAttribute="top" constant="8" id="9sw-bc-4Nw"/>
@@ -98,6 +107,8 @@
                             <constraint firstAttribute="bottom" secondItem="Fnv-Fg-48L" secondAttribute="bottom" constant="14" id="Ds7-IO-TUh"/>
                             <constraint firstItem="Fnv-Fg-48L" firstAttribute="leading" secondItem="Ffs-h7-Xzs" secondAttribute="leading" constant="8" id="GUu-3F-NNj"/>
                             <constraint firstItem="vCY-7C-tEt" firstAttribute="leading" secondItem="lXV-ZZ-0zs" secondAttribute="leading" constant="8" id="J3J-dR-epF"/>
+                            <constraint firstItem="nrX-37-nAG" firstAttribute="trailing" secondItem="xj1-iC-cmi" secondAttribute="trailing" id="L37-61-F0Z"/>
+                            <constraint firstItem="nrX-37-nAG" firstAttribute="width" secondItem="nrX-37-nAG" secondAttribute="height" multiplier="469:137" id="LGp-aM-a5K"/>
                             <constraint firstItem="ht6-rF-mAc" firstAttribute="top" secondItem="xj1-iC-cmi" secondAttribute="bottom" constant="12" id="Ll0-k4-R0G"/>
                             <constraint firstItem="xj1-iC-cmi" firstAttribute="top" secondItem="Ffs-h7-Xzs" secondAttribute="top" id="QLM-1a-FHI"/>
                             <constraint firstItem="RQx-ct-6Uf" firstAttribute="trailing" secondItem="lXV-ZZ-0zs" secondAttribute="trailing" constant="-8" id="QOl-eF-xjy"/>
@@ -105,6 +116,8 @@
                             <constraint firstItem="RQx-ct-6Uf" firstAttribute="bottom" secondItem="lXV-ZZ-0zs" secondAttribute="bottom" constant="-8" id="RLS-mD-plQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="guz-BZ-1Mb" secondAttribute="trailing" constant="8" id="RTd-HC-n3B"/>
                             <constraint firstItem="lXV-ZZ-0zs" firstAttribute="bottom" secondItem="xj1-iC-cmi" secondAttribute="bottom" id="Tjf-2D-g3W"/>
+                            <constraint firstItem="nrX-37-nAG" firstAttribute="leading" secondItem="xj1-iC-cmi" secondAttribute="leading" id="Vot-Ql-Azh"/>
+                            <constraint firstItem="nrX-37-nAG" firstAttribute="bottom" secondItem="xj1-iC-cmi" secondAttribute="bottom" id="W9d-dc-orh"/>
                             <constraint firstAttribute="width" constant="469" id="cNA-uZ-cgr"/>
                             <constraint firstItem="ht6-rF-mAc" firstAttribute="leading" secondItem="Ffs-h7-Xzs" secondAttribute="leading" constant="8" id="fPH-BC-IZO"/>
                             <constraint firstItem="0ck-cE-BhV" firstAttribute="centerY" secondItem="Fnv-Fg-48L" secondAttribute="centerY" id="g5Q-oN-uYy"/>
@@ -165,11 +178,11 @@
         </tableViewCell>
     </objects>
     <designables>
+        <designable name="nrX-37-nAG">
+            <size key="intrinsicContentSize" width="794.5" height="319.5"/>
+        </designable>
         <designable name="vCY-7C-tEt">
             <size key="intrinsicContentSize" width="186" height="31"/>
-        </designable>
-        <designable name="xj1-iC-cmi">
-            <size key="intrinsicContentSize" width="794.5" height="319.5"/>
         </designable>
     </designables>
     <resources>

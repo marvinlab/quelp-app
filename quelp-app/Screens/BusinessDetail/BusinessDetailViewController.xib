@@ -33,7 +33,10 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnL-83-8zX" userLabel="ContentView">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yelp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="zBA-pH-FA0" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yelp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="XQx-8h-QUh" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="229"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zBA-pH-FA0" customClass="AnimatableImageView" customModule="IBAnimatable">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="229"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="229" id="9ZG-2c-1lT"/>
@@ -129,12 +132,14 @@ Sun:    Closed</string>
                                 <constraint firstAttribute="trailing" secondItem="tzo-bj-MYs" secondAttribute="trailing" id="3DP-Fl-12N"/>
                                 <constraint firstAttribute="trailing" secondItem="rTL-dz-lHf" secondAttribute="trailing" id="4YA-6v-SpX"/>
                                 <constraint firstAttribute="trailing" secondItem="PaB-Ai-jIU" secondAttribute="trailing" constant="12" id="7Ks-3b-ZgM"/>
+                                <constraint firstItem="XQx-8h-QUh" firstAttribute="leading" secondItem="zBA-pH-FA0" secondAttribute="leading" id="7ia-hp-HZ2"/>
                                 <constraint firstItem="b41-0Z-JJx" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" constant="8" id="86j-zw-UCy"/>
                                 <constraint firstItem="cCA-Q0-wjR" firstAttribute="centerY" secondItem="YEe-n3-ATr" secondAttribute="centerY" id="94d-mI-ExM"/>
                                 <constraint firstItem="rTL-dz-lHf" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" id="96j-Em-lGj"/>
                                 <constraint firstItem="zBA-pH-FA0" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" id="De7-PT-H4K"/>
                                 <constraint firstAttribute="trailing" secondItem="z7c-l3-V4O" secondAttribute="trailing" constant="8" id="G15-sk-f5N"/>
                                 <constraint firstItem="fnL-Be-S2S" firstAttribute="top" secondItem="EiM-ue-oQ9" secondAttribute="bottom" constant="8" id="GbG-sE-Yq2"/>
+                                <constraint firstItem="XQx-8h-QUh" firstAttribute="top" secondItem="zBA-pH-FA0" secondAttribute="top" id="Grs-9d-fYV"/>
                                 <constraint firstItem="cCA-Q0-wjR" firstAttribute="leading" secondItem="YEe-n3-ATr" secondAttribute="trailing" constant="8" symbolic="YES" id="HJX-Zq-YK0"/>
                                 <constraint firstAttribute="trailing" secondItem="EiM-ue-oQ9" secondAttribute="trailing" constant="8" id="IGH-40-VQw"/>
                                 <constraint firstItem="z7c-l3-V4O" firstAttribute="top" secondItem="zBA-pH-FA0" secondAttribute="bottom" constant="8" symbolic="YES" id="INw-GB-GJs"/>
@@ -145,9 +150,11 @@ Sun:    Closed</string>
                                 <constraint firstItem="FJy-WQ-5ug" firstAttribute="top" secondItem="b41-0Z-JJx" secondAttribute="bottom" constant="14" id="OXH-J0-7HW"/>
                                 <constraint firstItem="EiM-ue-oQ9" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" constant="8" id="PRl-ca-q0V"/>
                                 <constraint firstItem="b41-0Z-JJx" firstAttribute="top" secondItem="fnL-Be-S2S" secondAttribute="bottom" constant="12" id="R90-Sx-56b"/>
+                                <constraint firstItem="XQx-8h-QUh" firstAttribute="trailing" secondItem="zBA-pH-FA0" secondAttribute="trailing" id="RI4-of-Om9"/>
                                 <constraint firstAttribute="trailing" secondItem="FJy-WQ-5ug" secondAttribute="trailing" constant="8" id="SHy-vS-SGC"/>
                                 <constraint firstAttribute="trailing" secondItem="zBA-pH-FA0" secondAttribute="trailing" id="SSw-wg-3Mu"/>
                                 <constraint firstItem="z7c-l3-V4O" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" constant="8" id="T3S-17-gtv"/>
+                                <constraint firstItem="XQx-8h-QUh" firstAttribute="bottom" secondItem="zBA-pH-FA0" secondAttribute="bottom" id="U6N-22-KFg"/>
                                 <constraint firstAttribute="height" constant="1000" id="URR-WL-nYw"/>
                                 <constraint firstItem="EiM-ue-oQ9" firstAttribute="top" secondItem="rTL-dz-lHf" secondAttribute="bottom" constant="8" id="aji-BC-dcJ"/>
                                 <constraint firstItem="YEe-n3-ATr" firstAttribute="top" secondItem="z7c-l3-V4O" secondAttribute="bottom" constant="8" id="bq9-kQ-ied"/>
@@ -187,6 +194,9 @@ Sun:    Closed</string>
         <designable name="PaB-Ai-jIU">
             <size key="intrinsicContentSize" width="111.33333333333333" height="18.666666666666668"/>
         </designable>
+        <designable name="XQx-8h-QUh">
+            <size key="intrinsicContentSize" width="529.66666666666663" height="213"/>
+        </designable>
         <designable name="b41-0Z-JJx">
             <size key="intrinsicContentSize" width="69.333333333333329" height="18"/>
         </designable>
@@ -198,9 +208,6 @@ Sun:    Closed</string>
         </designable>
         <designable name="z7c-l3-V4O">
             <size key="intrinsicContentSize" width="243" height="41.333333333333336"/>
-        </designable>
-        <designable name="zBA-pH-FA0">
-            <size key="intrinsicContentSize" width="529.66666666666663" height="213"/>
         </designable>
     </designables>
     <resources>

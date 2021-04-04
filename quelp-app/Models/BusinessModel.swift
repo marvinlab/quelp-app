@@ -34,6 +34,7 @@ class Business: Codable {
     let coordinates: LocationCoordinates?
     let categories: [BusinessCategory]?
     let photoUrls: [String]?
+    let businessHours: [BusinessHours]?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -52,6 +53,7 @@ class Business: Codable {
         case coordinates
         case categories
         case photoUrls = "photos"
+        case businessHours = "hours"
     }
 }
 
@@ -99,6 +101,6 @@ class BusinessHours: Codable {
 
 class OpenHour: Codable {
     let day: BusinessWeekDay?
-    let star: String?
+    let start: String?
     let end: String?
 }
