@@ -23,6 +23,7 @@ class Business: Codable {
     let location: BusinessLocation?
     let coordinates: LocationCoordinates?
     let categories: [BusinessCategory]?
+    let photoUrls: [String]?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -40,6 +41,7 @@ class Business: Codable {
         case location
         case coordinates
         case categories
+        case photoUrls = "photos"
     }
 }
 
@@ -73,4 +75,9 @@ class BusinessLocation: Codable {
         case city
         case address3
     }
+}
+
+class BusinessHours: Codable {
+    let isOpenNow: Bool
+    let
 }

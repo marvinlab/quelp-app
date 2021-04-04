@@ -40,6 +40,17 @@ class BusinessSearchResultViewController: UIViewController {
         self.resultsTable.register(emptyResultCellNib, forCellReuseIdentifier: "EmptyResultCell")
         self.resultsTable.reloadData()
     }
+    
+    func seeBusinessDetails(id: String) {
+        businessRequestProvider.request(.getBusinessDetails(id: id)) { (result) in
+            switch result {
+            case .success:
+                print("Success")
+            case .failure:
+                print("failed")
+            }
+        }
+    }
 }
 
 extension BusinessSearchResultViewController: UITableViewDelegate, UITableViewDataSource {
@@ -61,5 +72,12 @@ extension BusinessSearchResultViewController: UITableViewDelegate, UITableViewDa
         let businessCell = resultsTable.dequeueReusableCell(withIdentifier: "BusinessSearchResultCell") as! BusinessSearchResultCell
         businessCell.businessViewModel = businessesCellViewModels[indexPath.row]
         return businessCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if businessesCellViewModels.count > 0 {
+            let businessId = businessesCellViewModels[indexPath.row].businessId
+            self.seeBusinessDetails(id: businessId)
+        }
     }
 }

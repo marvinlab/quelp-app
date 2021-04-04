@@ -13,6 +13,7 @@ var businessRequestProvider = MoyaProvider<BusinessRequests>(plugins: [QAActivit
 
 enum BusinessRequests {
     case getBusinesses(location: String, term: String)
+    case getBusinessDetails(id: String)
 }
 
 extension BusinessRequests: TargetType {
@@ -24,19 +25,21 @@ extension BusinessRequests: TargetType {
         switch self {
         case .getBusinesses:
             return Constants.Api.getBusinesses
+        case .getBusinessDetails(id: let id):
+            return "\(Constants.Api.getBusinessDetails)/\(id)"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .getBusinesses:
+        case .getBusinesses, .getBusinessDetails:
             return .get
         }
     }
     
     var sampleData: Data {
         switch self {
-        case .getBusinesses:
+        case .getBusinesses, .getBusinessDetails:
             return getStubData(fileName: "Generic_Success")
         }
     }
@@ -46,6 +49,8 @@ extension BusinessRequests: TargetType {
         case .getBusinesses(location: let location, term: let term):
             let parameters = ["location": location, "term": term]
             return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
+        case .getBusinessDetails:
+            return .requestPlain
         }
     }
     

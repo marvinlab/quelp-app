@@ -10,6 +10,7 @@ import UIKit
 
 
 struct BusinessSearchResultCellViewModel {
+    let businessId: String
     let businessImageUrl: String
     let name: String
     let ratingString: String
@@ -21,6 +22,7 @@ struct BusinessSearchResultCellViewModel {
     let ratingStarImage: UIImage
     
     init(business: Business) {
+        self.businessId = business.id ?? ""
         self.businessImageUrl = business.imageUrl ?? ""
         self.name = business.name ?? ""
         self.ratingString = String(format: Constants.AppStrings.ratingString, "\(business.reviewCount ?? 0)")
