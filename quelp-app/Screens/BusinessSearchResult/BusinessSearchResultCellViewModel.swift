@@ -20,6 +20,8 @@ struct BusinessSearchResultCellViewModel {
     let categories: String
     let city: String
     let ratingStarImage: UIImage
+    let ratingValue: Decimal
+    let distanceValue: Decimal
     
     init(business: Business) {
         self.businessId = business.id ?? ""
@@ -46,5 +48,7 @@ struct BusinessSearchResultCellViewModel {
         self.city = business.location?.city ?? ""
         let starRatingFileName = "small_\(business.rating ?? 0)"
         self.ratingStarImage = #imageLiteral(resourceName: starRatingFileName)
+        self.ratingValue = business.rating ?? 0.0
+        self.distanceValue = business.distance ?? 0.0
     }
 }

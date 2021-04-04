@@ -11,6 +11,7 @@
             <connections>
                 <outlet property="resultKeywordLabel" destination="lic-PB-o9u" id="Mo3-na-bH0"/>
                 <outlet property="resultsTable" destination="5oh-gr-JBR" id="jf1-yQ-zr1"/>
+                <outlet property="sortButton" destination="yo1-EP-T2N" id="VKT-hz-lwq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,8 +27,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhp-Ea-sG0" customClass="AnimatableView" customModule="IBAnimatable">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We found 100 results for &quot;Siomai&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lic-PB-o9u">
-                            <rect key="frame" x="79" y="39.666666666666664" width="256.33333333333331" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lic-PB-o9u">
+                            <rect key="frame" x="207" y="50" width="0.0" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.55536826608535561" green="0.24198502823225043" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
@@ -35,8 +36,11 @@
                             <size key="shadowOffset" width="0.5" height="0.5"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo1-EP-T2N">
-                            <rect key="frame" x="322" y="65" width="76" height="30"/>
-                            <state key="normal" title="Sort Result"/>
+                            <rect key="frame" x="296" y="65" width="102" height="30"/>
+                            <state key="normal" title="Sort by: Rating"/>
+                            <connections>
+                                <action selector="sortButtonAction:" destination="-1" eventType="touchUpInside" id="19r-mf-7JK"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.99183199759999996" green="0.78123656210000003" blue="1" alpha="0.71872477629999998" colorSpace="custom" customColorSpace="displayP3"/>
