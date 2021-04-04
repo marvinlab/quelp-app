@@ -20,6 +20,8 @@ class BusinessDetailViewModel {
     let displayAdressText: String
     let openText: String
     let openHoursText: String
+    let displayPhoneNumber: String
+    let galleryImageUrls: [String]
     
     init(business: Business) {
         businessImageUrl = business.imageUrl ?? ""
@@ -31,6 +33,8 @@ class BusinessDetailViewModel {
         displayAdressText = BusinessDetailViewModel.formatDisplayAddress(displayAddressStrings: business.location?.displayAddress ?? [])
         openText = business.isClosed ?? false ? Constants.AppStrings.closed : Constants.AppStrings.open
         openHoursText = BusinessDetailViewModel.formatOpenHours(openHours: business.businessHours?.first?.openHours ?? [])
+        displayPhoneNumber = business.displayPhone ?? ""
+        galleryImageUrls = business.photoUrls ?? []
     }
     
     private class func formatCategories(categories: [BusinessCategory]) -> String {

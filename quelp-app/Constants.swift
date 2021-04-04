@@ -23,7 +23,7 @@ struct Constants {
         static let closed = "Closed now"
         static let distanceString = "%@ km away"
         static let keywordResultString = "We found %@ results for \"%@\""
-        static let noAvailableHoursProvided = "This establishmemt has not provided business operating hours information"
+        static let noAvailableHoursProvided = "This establishment has not provided business operating hours information"
         
         //Error
         static let emptySearchTextFieldError = "Please enter word to search."
