@@ -13,6 +13,7 @@ var businessRequestProvider = MoyaProvider<BusinessRequests>(plugins: [QAActivit
 
 enum BusinessRequests {
     case getBusinesses(coordinates: LocationCoordinates, term: String)
+    case getBusinessesWithLocationSearch(location: String, term: String)
     case getBusinessDetails(id: String)
 }
 
@@ -23,7 +24,7 @@ extension BusinessRequests: TargetType {
     
     var path: String {
         switch self {
-        case .getBusinesses:
+        case .getBusinesses, .getBusinessesWithLocationSearch:
             return Constants.Api.getBusinesses
         case .getBusinessDetails(id: let id):
             return "\(Constants.Api.getBusinessDetails)/\(id)"
@@ -32,14 +33,14 @@ extension BusinessRequests: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .getBusinesses, .getBusinessDetails:
+        case .getBusinesses, .getBusinessDetails, .getBusinessesWithLocationSearch:
             return .get
         }
     }
     
     var sampleData: Data {
         switch self {
-        case .getBusinesses, .getBusinessDetails:
+        case .getBusinesses, .getBusinessDetails, .getBusinessesWithLocationSearch:
             return getStubData(fileName: "Generic_Success")
         }
     }
@@ -48,6 +49,10 @@ extension BusinessRequests: TargetType {
         switch self {
         case .getBusinesses(coordinates: let coordinates, term: let term):
             let parameters = ["longitude": "\(coordinates.longitude ?? -73.561668)", "latitude": "\(coordinates.latitude ?? 45.508888)", "term": term] as [String : Any]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
+        case .getBusinessesWithLocationSearch(location: let location, term: let term):
+            var parameters = ["location": location]
+            if term.trimmed != "" { parameters["term"] = term }
             return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
         case .getBusinessDetails:
             return .requestPlain

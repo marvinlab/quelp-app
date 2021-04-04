@@ -13,8 +13,18 @@ struct BusinessSearchResultViewModel {
     let resultsKeywordText: String
     let businesses: [Business]
     
-    init(businesses: [Business], keyword: String) {
+    init(businesses: [Business], keyword: String, location: String) {
         self.businesses = businesses
-        self.resultsKeywordText = String(format: Constants.AppStrings.keywordResultString, "\(businesses.count)", keyword)
+        var keywordString = ""
+        if keyword.trimmed != "" {
+            keywordString.append("for \(keyword)")
+        }
+        
+        if location.trimmed != "" {
+            keywordString.append(" in \(location)")
+        } else {
+            keywordString.append(" in your location")
+        }
+        self.resultsKeywordText = String(format: Constants.AppStrings.weFoundString, "\(businesses.count)", keywordString)
     }
 }

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessSearchViewController" customModule="quelp_app" customModuleProvider="target">
             <connections>
+                <outlet property="locationTextField" destination="ezO-sY-eHE" id="OIy-OD-Olk"/>
                 <outlet property="searchTextField" destination="Ufp-dz-WMY" id="7fC-sV-866"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,7 +24,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ufp-dz-WMY" customClass="TextField" customModule="Material">
-                            <rect key="frame" x="24" y="347.33333333333331" width="366" height="34"/>
+                            <rect key="frame" x="24" y="215.33333333333334" width="366" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                             <userDefinedRuntimeAttributes>
@@ -31,7 +32,7 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNn-MF-U6s" customClass="FlatButton" customModule="Material">
-                            <rect key="frame" x="137" y="413.33333333333331" width="140" height="50"/>
+                            <rect key="frame" x="137" y="369" width="140" height="50"/>
                             <color key="backgroundColor" red="0.99183199762284302" green="0.7812365620841859" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="140" id="NWM-ep-zi9"/>
@@ -54,19 +55,19 @@
                             </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marketplace_art" translatesAutoresizingMaskIntoConstraints="NO" id="S2S-tt-TLz">
-                            <rect key="frame" x="24" y="64" width="366" height="200"/>
+                            <rect key="frame" x="24" y="32" width="366" height="100"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="200" id="Z7K-yr-bpC"/>
+                                <constraint firstAttribute="height" constant="100" id="Z7K-yr-bpC"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you looking for?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUP-oD-oVf">
-                            <rect key="frame" x="12" y="284" width="390" height="31.333333333333314"/>
+                            <rect key="frame" x="12" y="152" width="390" height="31.333333333333343"/>
                             <fontDescription key="fontDescription" type="system" pointSize="26"/>
                             <color key="textColor" systemColor="systemPurpleColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not sure what to look for? Try searching &quot;Japanese Cuisine&quot; or something more specific like &quot;Sushi&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5K-vu-m8z" customClass="AnimatableLabel" customModule="IBAnimatable">
-                            <rect key="frame" x="33" y="523.33333333333337" width="348" height="61"/>
+                            <rect key="frame" x="33" y="479" width="348" height="61"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" systemColor="systemPurpleColor"/>
                             <nil key="highlightedColor"/>
@@ -83,13 +84,27 @@
                             <color key="textColor" systemColor="systemPurpleColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cg-xj-ly7">
+                            <rect key="frame" x="8" y="265.33333333333331" width="398" height="21.666666666666686"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" systemColor="systemPurpleColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezO-sY-eHE" customClass="TextField" customModule="Material">
+                            <rect key="frame" x="24" y="303" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Search by Specific Location"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
                     </subviews>
                     <color key="backgroundColor" red="0.91852478578708618" green="0.88644844023369773" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstItem="Ufp-dz-WMY" firstAttribute="leading" secondItem="e7h-jP-WNO" secondAttribute="leading" constant="24" id="1oJ-LY-25a"/>
-                        <constraint firstItem="ZNn-MF-U6s" firstAttribute="top" secondItem="Ufp-dz-WMY" secondAttribute="bottom" constant="32" id="4bW-iF-Gtp"/>
                         <constraint firstAttribute="trailing" secondItem="lca-MX-O3D" secondAttribute="trailing" constant="33" id="5Sr-xW-c8I"/>
-                        <constraint firstItem="S2S-tt-TLz" firstAttribute="top" secondItem="e7h-jP-WNO" secondAttribute="top" constant="64" id="EW1-3z-8bh"/>
+                        <constraint firstItem="7Cg-xj-ly7" firstAttribute="leading" secondItem="e7h-jP-WNO" secondAttribute="leading" constant="8" id="AXg-7g-d3U"/>
+                        <constraint firstItem="S2S-tt-TLz" firstAttribute="top" secondItem="e7h-jP-WNO" secondAttribute="top" constant="32" id="EW1-3z-8bh"/>
                         <constraint firstItem="ZNn-MF-U6s" firstAttribute="centerX" secondItem="e7h-jP-WNO" secondAttribute="centerX" id="EZe-C7-H89"/>
                         <constraint firstItem="z5K-vu-m8z" firstAttribute="leading" secondItem="e7h-jP-WNO" secondAttribute="leading" constant="33" id="Eqg-3d-Ud4"/>
                         <constraint firstItem="lca-MX-O3D" firstAttribute="leading" secondItem="e7h-jP-WNO" secondAttribute="leading" constant="33" id="GwH-BG-paT"/>
@@ -100,12 +115,18 @@
                         <constraint firstItem="id3-ij-Xp7" firstAttribute="leading" secondItem="e7h-jP-WNO" secondAttribute="leading" constant="130" id="fZg-Su-BkC"/>
                         <constraint firstItem="z5K-vu-m8z" firstAttribute="top" secondItem="ZNn-MF-U6s" secondAttribute="bottom" constant="60" id="hoc-2b-MO4"/>
                         <constraint firstAttribute="trailing" secondItem="Ufp-dz-WMY" secondAttribute="trailing" constant="24" id="iL7-3m-lOg"/>
+                        <constraint firstAttribute="trailing" secondItem="7Cg-xj-ly7" secondAttribute="trailing" constant="8" id="kmd-0e-qSW"/>
                         <constraint firstAttribute="trailing" secondItem="LUP-oD-oVf" secondAttribute="trailing" constant="12" id="lxH-Xt-wou"/>
+                        <constraint firstAttribute="trailing" secondItem="ezO-sY-eHE" secondAttribute="trailing" constant="24" id="ndX-D5-ckM"/>
+                        <constraint firstItem="7Cg-xj-ly7" firstAttribute="top" secondItem="Ufp-dz-WMY" secondAttribute="bottom" constant="16" id="oiS-he-Q0I"/>
+                        <constraint firstItem="ZNn-MF-U6s" firstAttribute="top" secondItem="ezO-sY-eHE" secondAttribute="bottom" constant="32" id="oxy-eM-YwW"/>
+                        <constraint firstItem="ezO-sY-eHE" firstAttribute="leading" secondItem="e7h-jP-WNO" secondAttribute="leading" constant="24" id="pOq-8T-ean"/>
                         <constraint firstAttribute="bottom" secondItem="id3-ij-Xp7" secondAttribute="bottom" constant="37" id="qeP-Db-oBK"/>
                         <constraint firstItem="LUP-oD-oVf" firstAttribute="leading" secondItem="e7h-jP-WNO" secondAttribute="leading" constant="12" id="r11-0w-A0Q"/>
                         <constraint firstItem="S2S-tt-TLz" firstAttribute="leading" secondItem="e7h-jP-WNO" secondAttribute="leading" constant="24" id="rWP-bq-prV"/>
                         <constraint firstItem="Ufp-dz-WMY" firstAttribute="top" secondItem="LUP-oD-oVf" secondAttribute="bottom" constant="32" id="slB-uJ-u4R"/>
                         <constraint firstAttribute="trailing" secondItem="S2S-tt-TLz" secondAttribute="trailing" constant="24" id="sow-iN-BIv"/>
+                        <constraint firstItem="ezO-sY-eHE" firstAttribute="top" secondItem="7Cg-xj-ly7" secondAttribute="bottom" constant="16" id="x2X-Gh-stM"/>
                     </constraints>
                 </view>
             </subviews>

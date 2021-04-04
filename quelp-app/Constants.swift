@@ -23,7 +23,7 @@ struct Constants {
         static let open = "Open now"
         static let closed = "Closed now"
         static let distanceString = "%@ away"
-        static let keywordResultString = "We found %@ results for \"%@\""
+        static let weFoundString = "We found %@ results %@"
         static let noAvailableHoursProvided = "This establishment has not provided business operating hours information"
         
         static let sortButtonNearFirst = "Sort: Nearest First"
@@ -37,7 +37,7 @@ struct Constants {
         
         
         //Error
-        static let emptySearchTextFieldError = "Please enter word to search."
+        static let emptySearchTextFieldError = "At least one of the fields must have an input"
         static let requestError = "An error occured with the request. Please try again."
     }
 }

@@ -13,6 +13,8 @@ import CoreLocation
 class BusinessSearchViewController: UIViewController {
 
     @IBOutlet weak var searchTextField: TextField!
+    @IBOutlet weak var locationTextField: TextField!
+    
     let locationManager = CLLocationManager()
     var userCoordinates: LocationCoordinates?
     init(withTitle title: String) {
@@ -32,6 +34,9 @@ class BusinessSearchViewController: UIViewController {
     func setupTextField() {
         searchTextField.delegate = self
         searchTextField.setDefaultTextField()
+        
+        locationTextField.delegate = self
+        locationTextField.setDefaultTextField()
     }
     
     func checkUserLocation() {
@@ -59,21 +64,33 @@ class BusinessSearchViewController: UIViewController {
     func searchForResults() {
         checkUserLocation()
         self.view.endEditing(true)
-        if searchTextField.text?.trimmed != "" {
-            searchBusiness()
-        } else {
+        if searchTextField.text?.trimmed == "" && locationTextField.text?.trimmed == "" {
             searchTextField.setErroneousTextField(withErrorDetail: Constants.AppStrings.emptySearchTextFieldError)
+        } else {
+            searchBusiness()
         }
     }
     
     func searchBusiness() {
-        businessRequestProvider.request(.getBusinesses(coordinates: userCoordinates!, term: searchTextField.text ?? "")) { (result) in
-            switch result {
-            case .success(let result):
-                let jsonResponse = JSON(result.data)
-                self.handleSuccessfulBusinessSearch(response: jsonResponse)
-            case .failure:
-                self.handleError()
+        if locationTextField.text?.trimmed != "" {
+            businessRequestProvider.request(.getBusinessesWithLocationSearch(location: locationTextField.text ?? "", term: searchTextField.text ?? "")) { (result) in
+                switch result {
+                case .success(let result):
+                    let jsonResponse = JSON(result.data)
+                    self.handleSuccessfulBusinessSearch(response: jsonResponse)
+                case .failure:
+                    self.handleError()
+                }
+            }
+        } else {
+            businessRequestProvider.request(.getBusinesses(coordinates: userCoordinates!, term: searchTextField.text ?? "")) { (result) in
+                switch result {
+                case .success(let result):
+                    let jsonResponse = JSON(result.data)
+                    self.handleSuccessfulBusinessSearch(response: jsonResponse)
+                case .failure:
+                    self.handleError()
+                }
             }
         }
     }
@@ -86,7 +103,7 @@ class BusinessSearchViewController: UIViewController {
                 businesses.append(businessModel!)
             }
         }
-        let searchResultViewModel = BusinessSearchResultViewModel(businesses: businesses, keyword: searchTextField.text ?? "")
+        let searchResultViewModel = BusinessSearchResultViewModel(businesses: businesses, keyword: searchTextField.text ?? "", location: locationTextField.text ?? "")
         let resultsPage = BusinessSearchResultViewController(withTitle: "Results")
         resultsPage.businessResultsViewModel = searchResultViewModel
         self.navigationController?.pushViewController(resultsPage, animated: true
