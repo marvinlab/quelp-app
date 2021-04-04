@@ -45,6 +45,9 @@ class BusinessDetailViewModel {
     }
     
     private class func formatReviewsText(reviewCount: Int, rating: Decimal) -> String {
+        if reviewCount == 0 {
+            return Constants.AppStrings.noReviews
+        }
         return String(format: Constants.AppStrings.ratingReviewString, "\(rating)", "\(reviewCount)")
     }
     

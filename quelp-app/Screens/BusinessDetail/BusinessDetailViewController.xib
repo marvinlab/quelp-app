@@ -35,7 +35,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="1010"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnL-83-8zX" userLabel="ContentView">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="903.33333333333337"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yelp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="XQx-8h-QUh" customClass="AnimatableImageView" customModule="IBAnimatable">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="229"/>
@@ -204,13 +204,13 @@ Sun:    Closed</string>
                                 <constraint firstItem="uzb-e9-hnv" firstAttribute="top" secondItem="304-dN-oH3" secondAttribute="bottom" constant="8" id="Smq-Kc-fMA"/>
                                 <constraint firstItem="z7c-l3-V4O" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" constant="8" id="T3S-17-gtv"/>
                                 <constraint firstItem="XQx-8h-QUh" firstAttribute="bottom" secondItem="zBA-pH-FA0" secondAttribute="bottom" id="U6N-22-KFg"/>
-                                <constraint firstAttribute="height" constant="1000" id="URR-WL-nYw"/>
                                 <constraint firstAttribute="trailing" secondItem="304-dN-oH3" secondAttribute="trailing" constant="8" id="YcN-6q-oJR"/>
                                 <constraint firstItem="EiM-ue-oQ9" firstAttribute="top" secondItem="rTL-dz-lHf" secondAttribute="bottom" constant="8" id="aji-BC-dcJ"/>
                                 <constraint firstItem="YEe-n3-ATr" firstAttribute="top" secondItem="z7c-l3-V4O" secondAttribute="bottom" constant="8" id="bq9-kQ-ied"/>
                                 <constraint firstItem="jAC-6C-Ibb" firstAttribute="leading" secondItem="gBX-pK-Qzm" secondAttribute="trailing" constant="8" id="chR-Xx-GyM"/>
                                 <constraint firstItem="uzb-e9-hnv" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" constant="8" id="eNa-VU-WL9"/>
                                 <constraint firstItem="gBX-pK-Qzm" firstAttribute="centerY" secondItem="b41-0Z-JJx" secondAttribute="centerY" id="fUD-9q-5K0"/>
+                                <constraint firstAttribute="bottom" secondItem="uzb-e9-hnv" secondAttribute="bottom" constant="24" id="flv-uR-FeK"/>
                                 <constraint firstItem="fnL-Be-S2S" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" constant="8" id="hl3-Uj-v99"/>
                                 <constraint firstItem="tzo-bj-MYs" firstAttribute="top" secondItem="zBA-pH-FA0" secondAttribute="bottom" constant="8" symbolic="YES" id="jrE-uQ-zj9"/>
                                 <constraint firstAttribute="trailing" secondItem="cCA-Q0-wjR" secondAttribute="trailing" constant="8" id="n5X-aK-az9"/>
