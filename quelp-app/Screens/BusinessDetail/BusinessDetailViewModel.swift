@@ -12,10 +12,12 @@ import MapKit
 class BusinessDetailViewModel {
     
     let businessImageUrl: String
+    let businessId: String
     let businessName: String
     let ratingImage: UIImage
     let categoriesText: String
     let reviewsText: String
+    let reviewCount: Int
     let coordinates: LocationCoordinates
     let displayAdressText: String
     let openText: String
@@ -24,11 +26,13 @@ class BusinessDetailViewModel {
     let galleryImageUrls: [String]
     
     init(business: Business) {
+        businessId = business.id ?? ""
         businessImageUrl = business.imageUrl ?? ""
         businessName = business.name ?? ""
         ratingImage = #imageLiteral(resourceName: "small_\(business.rating ?? 0)")
         categoriesText = BusinessDetailViewModel.formatCategories(categories: business.categories ?? [])
         reviewsText = BusinessDetailViewModel.formatReviewsText(reviewCount: business.reviewCount ?? 0, rating: business.rating ?? 0.0)
+        reviewCount = business.reviewCount ?? 0
         coordinates = business.coordinates!
         displayAdressText = BusinessDetailViewModel.formatDisplayAddress(displayAddressStrings: business.location?.displayAddress ?? [])
         openText = business.isClosed ?? false ? Constants.AppStrings.closed : Constants.AppStrings.open

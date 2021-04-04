@@ -14,6 +14,7 @@
                 <outlet property="businessImage" destination="zBA-pH-FA0" id="qvE-oS-XHx"/>
                 <outlet property="businessNameLabel" destination="z7c-l3-V4O" id="gBZ-aD-EiV"/>
                 <outlet property="categoriesLabel" destination="PaB-Ai-jIU" id="AGg-vA-b03"/>
+                <outlet property="checkReviewsButton" destination="PAy-wq-Ady" id="ig4-TQ-3aI"/>
                 <outlet property="displayPhoneLabel" destination="jAC-6C-Ibb" id="fzx-Pb-BXQ"/>
                 <outlet property="galleryCollectionView" destination="uzb-e9-hnv" id="EAi-u4-NsZ"/>
                 <outlet property="galleryHeaderLabel" destination="304-dN-oH3" id="7ee-RE-t2r"/>
@@ -35,7 +36,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="1010"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnL-83-8zX" userLabel="ContentView">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="903.33333333333337"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="968.33333333333337"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yelp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="XQx-8h-QUh" customClass="AnimatableImageView" customModule="IBAnimatable">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="229"/>
@@ -168,6 +169,22 @@ Sun:    Closed</string>
                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </collectionViewFlowLayout>
                                 </collectionView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAy-wq-Ady" customClass="FlatButton" customModule="Material">
+                                    <rect key="frame" x="8" y="891.33333333333337" width="398" height="65"/>
+                                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="65" id="DhA-gw-EPS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <size key="titleShadowOffset" width="0.5" height="0.5"/>
+                                    <state key="normal" title="Check User Reviews">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="titleShadowColor" red="0.1764705882" green="0.25490196079999999" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="checkReviewsButton:" destination="-1" eventType="touchUpInside" id="GIc-Mw-gJc"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
@@ -182,6 +199,7 @@ Sun:    Closed</string>
                                 <constraint firstItem="b41-0Z-JJx" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" constant="8" id="86j-zw-UCy"/>
                                 <constraint firstItem="cCA-Q0-wjR" firstAttribute="centerY" secondItem="YEe-n3-ATr" secondAttribute="centerY" id="94d-mI-ExM"/>
                                 <constraint firstItem="rTL-dz-lHf" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" id="96j-Em-lGj"/>
+                                <constraint firstAttribute="trailing" secondItem="PAy-wq-Ady" secondAttribute="trailing" constant="8" id="BHj-gb-JlX"/>
                                 <constraint firstItem="zBA-pH-FA0" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" id="De7-PT-H4K"/>
                                 <constraint firstAttribute="trailing" secondItem="z7c-l3-V4O" secondAttribute="trailing" constant="8" id="G15-sk-f5N"/>
                                 <constraint firstAttribute="trailing" secondItem="jAC-6C-Ibb" secondAttribute="trailing" constant="8" id="G1E-Oe-3vp"/>
@@ -204,13 +222,15 @@ Sun:    Closed</string>
                                 <constraint firstItem="uzb-e9-hnv" firstAttribute="top" secondItem="304-dN-oH3" secondAttribute="bottom" constant="8" id="Smq-Kc-fMA"/>
                                 <constraint firstItem="z7c-l3-V4O" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" constant="8" id="T3S-17-gtv"/>
                                 <constraint firstItem="XQx-8h-QUh" firstAttribute="bottom" secondItem="zBA-pH-FA0" secondAttribute="bottom" id="U6N-22-KFg"/>
+                                <constraint firstItem="PAy-wq-Ady" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" constant="8" id="ViD-T9-EKZ"/>
                                 <constraint firstAttribute="trailing" secondItem="304-dN-oH3" secondAttribute="trailing" constant="8" id="YcN-6q-oJR"/>
                                 <constraint firstItem="EiM-ue-oQ9" firstAttribute="top" secondItem="rTL-dz-lHf" secondAttribute="bottom" constant="8" id="aji-BC-dcJ"/>
                                 <constraint firstItem="YEe-n3-ATr" firstAttribute="top" secondItem="z7c-l3-V4O" secondAttribute="bottom" constant="8" id="bq9-kQ-ied"/>
                                 <constraint firstItem="jAC-6C-Ibb" firstAttribute="leading" secondItem="gBX-pK-Qzm" secondAttribute="trailing" constant="8" id="chR-Xx-GyM"/>
+                                <constraint firstItem="PAy-wq-Ady" firstAttribute="top" secondItem="uzb-e9-hnv" secondAttribute="bottom" constant="12" id="cja-Cw-Ma0"/>
+                                <constraint firstAttribute="bottom" secondItem="PAy-wq-Ady" secondAttribute="bottom" constant="12" id="d4J-1u-1b1"/>
                                 <constraint firstItem="uzb-e9-hnv" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" constant="8" id="eNa-VU-WL9"/>
                                 <constraint firstItem="gBX-pK-Qzm" firstAttribute="centerY" secondItem="b41-0Z-JJx" secondAttribute="centerY" id="fUD-9q-5K0"/>
-                                <constraint firstAttribute="bottom" secondItem="uzb-e9-hnv" secondAttribute="bottom" constant="24" id="flv-uR-FeK"/>
                                 <constraint firstItem="fnL-Be-S2S" firstAttribute="leading" secondItem="NnL-83-8zX" secondAttribute="leading" constant="8" id="hl3-Uj-v99"/>
                                 <constraint firstItem="tzo-bj-MYs" firstAttribute="top" secondItem="zBA-pH-FA0" secondAttribute="bottom" constant="8" symbolic="YES" id="jrE-uQ-zj9"/>
                                 <constraint firstAttribute="trailing" secondItem="cCA-Q0-wjR" secondAttribute="trailing" constant="8" id="n5X-aK-az9"/>

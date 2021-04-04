@@ -8,6 +8,8 @@
 import UIKit
 import IBAnimatable
 import MapKit
+import Material
+import SwiftyJSON
 
 class BusinessDetailViewController: UIViewController {
     
@@ -24,6 +26,7 @@ class BusinessDetailViewController: UIViewController {
     @IBOutlet weak var displayPhoneLabel: AnimatableLabel!
     @IBOutlet weak var galleryCollectionView: UICollectionView!
     @IBOutlet weak var galleryHeaderLabel: AnimatableLabel!
+    @IBOutlet weak var checkReviewsButton: FlatButton!
     
     
     var businessDetailViewModel: BusinessDetailViewModel! {
@@ -57,6 +60,10 @@ class BusinessDetailViewController: UIViewController {
         self.displayPhoneLabel.text = number
         self.displayPhoneLabel.textColor = .systemPurple
         self.phoneIcon.image = #imageLiteral(resourceName: "phone_icon_material").withRenderingMode(.alwaysTemplate).withTintColor(.purple)
+    }
+    
+    func setCheckReviewsBtn() {
+        checkReviewsButton.isHidden = self.businessDetailViewModel.reviewCount == 0
     }
     
     func setMapViewFromCoordinates() {
@@ -108,7 +115,31 @@ class BusinessDetailViewController: UIViewController {
         previewImageView.loadImageFromURL(url, failOverImage: nil, showIndicator: true)
         self.navigationController?.pushViewController(previewVC, animated: true)
     }
-
+    
+    
+    @IBAction func checkReviewsButton(_ sender: Any) {
+        businessRequestProvider.request(.getReviews(id: businessDetailViewModel.businessId)) { (result) in
+            switch result {
+            case .success(let response):
+                self.showReviewsPage(response: JSON(response.data))
+            case .failure:
+                print("error")
+            }
+        }
+    }
+    
+    func showReviewsPage(response: JSON) {
+        let reviewsJSON = response["reviews"].arrayValue
+        var reviews: [ReviewModel] = []
+        reviewsJSON.forEach { (reviewData) in
+            reviews.append(try! JSONDecoder().decode(ReviewModel.self, from: reviewData.rawData()))
+        }
+        let reviewsPageViewModel = ReviewsViewModel(reviewModels: reviews)
+        let reviewsPage = ReviewsViewController(withTitle: "Reviews")
+        reviewsPage.reviewsViewModel = reviewsPageViewModel
+        self.navigationController?.pushViewController(reviewsPage, animated: true)
+    }
+    
 }
 
 extension BusinessDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

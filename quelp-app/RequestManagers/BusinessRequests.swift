@@ -15,6 +15,7 @@ enum BusinessRequests {
     case getBusinesses(coordinates: LocationCoordinates, term: String)
     case getBusinessesWithLocationSearch(location: String, term: String)
     case getBusinessDetails(id: String)
+    case getReviews(id: String)
 }
 
 extension BusinessRequests: TargetType {
@@ -28,19 +29,21 @@ extension BusinessRequests: TargetType {
             return Constants.Api.getBusinesses
         case .getBusinessDetails(id: let id):
             return "\(Constants.Api.getBusinessDetails)/\(id)"
+        case .getReviews(id: let id):
+            return "\(Constants.Api.getBusinessDetails)/\(id)/reviews"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .getBusinesses, .getBusinessDetails, .getBusinessesWithLocationSearch:
+        case .getBusinesses, .getBusinessDetails, .getBusinessesWithLocationSearch, .getReviews:
             return .get
         }
     }
     
     var sampleData: Data {
         switch self {
-        case .getBusinesses, .getBusinessDetails, .getBusinessesWithLocationSearch:
+        case .getBusinesses, .getBusinessDetails, .getBusinessesWithLocationSearch, .getReviews:
             return getStubData(fileName: "Generic_Success")
         }
     }
@@ -54,7 +57,7 @@ extension BusinessRequests: TargetType {
             var parameters = ["location": location]
             if term.trimmed != "" { parameters["term"] = term }
             return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
-        case .getBusinessDetails:
+        case .getBusinessDetails, .getReviews:
             return .requestPlain
         }
     }

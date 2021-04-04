@@ -12,10 +12,14 @@
 		7A4578AA397E41AE18E18AB0 /* Pods_quelp_app_quelp_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65E73942739E82F51C0EE64 /* Pods_quelp_app_quelp_appUITests.framework */; };
 		FA035AC32615C2A5008484D1 /* BusinessRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA035AC22615C2A5008484D1 /* BusinessRequests.swift */; };
 		FA035ACB2615C2EB008484D1 /* RequestPlugins.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA035ACA2615C2EB008484D1 /* RequestPlugins.swift */; };
+		FA129804261A16AF005C1998 /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA129802261A16AF005C1998 /* ReviewsViewController.swift */; };
+		FA129805261A16AF005C1998 /* ReviewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA129803261A16AF005C1998 /* ReviewsViewController.xib */; };
+		FA12980A261A17E6005C1998 /* ReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA129809261A17E6005C1998 /* ReviewsViewModel.swift */; };
 		FA15E89C26170FF500BE12FD /* BusinessSearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15E89B26170FF500BE12FD /* BusinessSearchResultViewModel.swift */; };
 		FA2E72C62616F4D0001FB82C /* BusinessSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E72C42616F4D0001FB82C /* BusinessSearchViewController.swift */; };
 		FA2E72C72616F4D0001FB82C /* BusinessSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2E72C52616F4D0001FB82C /* BusinessSearchViewController.xib */; };
 		FA2E72F526170757001FB82C /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E72F426170757001FB82C /* TextField+Extension.swift */; };
+		FA3BCD0E261A100900BE76CB /* ReviewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BCD0D261A100900BE76CB /* ReviewCellViewModel.swift */; };
 		FA4BE011261736A2002F4384 /* EmptyResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4BE00F261736A2002F4384 /* EmptyResultCell.swift */; };
 		FA4BE012261736A2002F4384 /* EmptyResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4BE010261736A2002F4384 /* EmptyResultCell.xib */; };
 		FA65EEC326197CF2000CABD3 /* BusinessDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65EEC226197CF2000CABD3 /* BusinessDetailViewModel.swift */; };
@@ -32,6 +36,9 @@
 		FA97BAD62616EA4F00B14E86 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97BAD52616EA4E00B14E86 /* UIImageView+Extension.swift */; };
 		FAA77A5426183EEF00E7002B /* BusinessDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA77A5226183EEF00E7002B /* BusinessDetailViewController.swift */; };
 		FAA77A5526183EEF00E7002B /* BusinessDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA77A5326183EEF00E7002B /* BusinessDetailViewController.xib */; };
+		FAC3B399261A07E20002F71B /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3B398261A07E20002F71B /* ReviewModel.swift */; };
+		FAC3B3A0261A0BED0002F71B /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3B39E261A0BED0002F71B /* ReviewCell.swift */; };
+		FAC3B3A1261A0BED0002F71B /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC3B39F261A0BED0002F71B /* ReviewCell.xib */; };
 		FACF9D2D2615BFCC0049AF80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF9D2C2615BFCC0049AF80 /* AppDelegate.swift */; };
 		FACF9D2F2615BFCC0049AF80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF9D2E2615BFCC0049AF80 /* SceneDelegate.swift */; };
 		FACF9D312615BFCC0049AF80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF9D302615BFCC0049AF80 /* ViewController.swift */; };
@@ -71,10 +78,14 @@
 		D65E73942739E82F51C0EE64 /* Pods_quelp_app_quelp_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quelp_app_quelp_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA035AC22615C2A5008484D1 /* BusinessRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRequests.swift; sourceTree = "<group>"; };
 		FA035ACA2615C2EB008484D1 /* RequestPlugins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPlugins.swift; sourceTree = "<group>"; };
+		FA129802261A16AF005C1998 /* ReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
+		FA129803261A16AF005C1998 /* ReviewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsViewController.xib; sourceTree = "<group>"; };
+		FA129809261A17E6005C1998 /* ReviewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewModel.swift; sourceTree = "<group>"; };
 		FA15E89B26170FF500BE12FD /* BusinessSearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchResultViewModel.swift; sourceTree = "<group>"; };
 		FA2E72C42616F4D0001FB82C /* BusinessSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchViewController.swift; sourceTree = "<group>"; };
 		FA2E72C52616F4D0001FB82C /* BusinessSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessSearchViewController.xib; sourceTree = "<group>"; };
 		FA2E72F426170757001FB82C /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
+		FA3BCD0D261A100900BE76CB /* ReviewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCellViewModel.swift; sourceTree = "<group>"; };
 		FA4BE00F261736A2002F4384 /* EmptyResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResultCell.swift; sourceTree = "<group>"; };
 		FA4BE010261736A2002F4384 /* EmptyResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyResultCell.xib; sourceTree = "<group>"; };
 		FA65EEC226197CF2000CABD3 /* BusinessDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewModel.swift; sourceTree = "<group>"; };
@@ -91,6 +102,9 @@
 		FA97BAD52616EA4E00B14E86 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		FAA77A5226183EEF00E7002B /* BusinessDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewController.swift; sourceTree = "<group>"; };
 		FAA77A5326183EEF00E7002B /* BusinessDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessDetailViewController.xib; sourceTree = "<group>"; };
+		FAC3B398261A07E20002F71B /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
+		FAC3B39E261A0BED0002F71B /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		FAC3B39F261A0BED0002F71B /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
 		FACF9D292615BFCC0049AF80 /* quelp-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quelp-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACF9D2C2615BFCC0049AF80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACF9D2E2615BFCC0049AF80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +185,7 @@
 		FA2E72BF2616F484001FB82C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FAC3B39D261A0BC70002F71B /* Reviews */,
 				FAA77A4E2618371A00E7002B /* BusinessDetail */,
 				FAA77A4A261836EF00E7002B /* LandingPage */,
 				FA2E72C02616F49A001FB82C /* BusinessSearchResult */,
@@ -207,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				FA97BA9D2615D90300B14E86 /* BusinessModel.swift */,
+				FAC3B398261A07E20002F71B /* ReviewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,6 +244,19 @@
 				FA65EEC226197CF2000CABD3 /* BusinessDetailViewModel.swift */,
 			);
 			path = BusinessDetail;
+			sourceTree = "<group>";
+		};
+		FAC3B39D261A0BC70002F71B /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				FAC3B39E261A0BED0002F71B /* ReviewCell.swift */,
+				FAC3B39F261A0BED0002F71B /* ReviewCell.xib */,
+				FA3BCD0D261A100900BE76CB /* ReviewCellViewModel.swift */,
+				FA129802261A16AF005C1998 /* ReviewsViewController.swift */,
+				FA129803261A16AF005C1998 /* ReviewsViewController.xib */,
+				FA129809261A17E6005C1998 /* ReviewsViewModel.swift */,
+			);
+			path = Reviews;
 			sourceTree = "<group>";
 		};
 		FACF9D202615BFCC0049AF80 = {
@@ -399,6 +428,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA97BAA52616E18D00B14E86 /* BusinessSearchResultCell.xib in Resources */,
+				FA129805261A16AF005C1998 /* ReviewsViewController.xib in Resources */,
+				FAC3B3A1261A0BED0002F71B /* ReviewCell.xib in Resources */,
 				FAA77A5526183EEF00E7002B /* BusinessDetailViewController.xib in Resources */,
 				FACF9D392615BFCD0049AF80 /* LaunchScreen.storyboard in Resources */,
 				FA4BE012261736A2002F4384 /* EmptyResultCell.xib in Resources */,
@@ -535,20 +566,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA035ACB2615C2EB008484D1 /* RequestPlugins.swift in Sources */,
+				FA129804261A16AF005C1998 /* ReviewsViewController.swift in Sources */,
 				FA97BAA42616E18D00B14E86 /* BusinessSearchResultCell.swift in Sources */,
 				FACF9D312615BFCC0049AF80 /* ViewController.swift in Sources */,
 				FA15E89C26170FF500BE12FD /* BusinessSearchResultViewModel.swift in Sources */,
 				FA97BAAA2616E6B400B14E86 /* BusinessSearchResultCellViewModel.swift in Sources */,
+				FA3BCD0E261A100900BE76CB /* ReviewCellViewModel.swift in Sources */,
 				FA035AC32615C2A5008484D1 /* BusinessRequests.swift in Sources */,
 				FA97BA9E2615D90300B14E86 /* BusinessModel.swift in Sources */,
 				FA97BAD62616EA4F00B14E86 /* UIImageView+Extension.swift in Sources */,
 				FA65EEC326197CF2000CABD3 /* BusinessDetailViewModel.swift in Sources */,
 				FA97BA882615C88A00B14E86 /* QALoadingView.swift in Sources */,
 				FAA77A5426183EEF00E7002B /* BusinessDetailViewController.swift in Sources */,
+				FA12980A261A17E6005C1998 /* ReviewsViewModel.swift in Sources */,
 				FA4BE011261736A2002F4384 /* EmptyResultCell.swift in Sources */,
 				FA97BA8D2615C89C00B14E86 /* Constants.swift in Sources */,
+				FAC3B3A0261A0BED0002F71B /* ReviewCell.swift in Sources */,
 				FA97BAB22616E85A00B14E86 /* UIImage+Extension.swift in Sources */,
 				FA2E72C62616F4D0001FB82C /* BusinessSearchViewController.swift in Sources */,
+				FAC3B399261A07E20002F71B /* ReviewModel.swift in Sources */,
 				FA2E72F526170757001FB82C /* TextField+Extension.swift in Sources */,
 				FACF9D2D2615BFCC0049AF80 /* AppDelegate.swift in Sources */,
 				FACF9D2F2615BFCC0049AF80 /* SceneDelegate.swift in Sources */,
