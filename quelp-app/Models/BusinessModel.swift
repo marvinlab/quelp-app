@@ -7,6 +7,16 @@
 
 import Foundation
 
+enum BusinessWeekDay: Int, Codable {
+    case monday = 0
+    case tuesday = 1
+    case wednesday = 2
+    case thursday = 3
+    case friday = 4
+    case saturday = 5
+    case sunday = 6
+}
+
 class Business: Codable {
     let id: String?
     let name: String?
@@ -46,8 +56,8 @@ class Business: Codable {
 }
 
 class LocationCoordinates: Codable {
-    let latitude: Decimal?
-    let longitude: Decimal?
+    let latitude: Double?
+    let longitude: Double?
 }
 
 class BusinessCategory: Codable {
@@ -78,6 +88,17 @@ class BusinessLocation: Codable {
 }
 
 class BusinessHours: Codable {
-    let isOpenNow: Bool
-    let
+    let isOpenNow: Bool?
+    let openHours: [OpenHour]?
+    
+    enum CodingKeys: String, CodingKey {
+        case isOpenNow = "is_open_now"
+        case openHours = "open"
+    }
+}
+
+class OpenHour: Codable {
+    let day: BusinessWeekDay?
+    let star: String?
+    let end: String?
 }

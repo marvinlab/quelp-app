@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class BusinessSearchResultViewController: UIViewController {
     @IBOutlet weak var resultKeywordLabel: UILabel!
@@ -14,8 +15,10 @@ class BusinessSearchResultViewController: UIViewController {
     var businessesCellViewModels: [BusinessSearchResultCellViewModel] = []
     var businessResultsViewModel: BusinessSearchResultViewModel! {
         didSet {
-            resultKeywordLabel?.text = businessResultsViewModel.resultsKeywordText
-            businessesCellViewModels = businessResultsViewModel.businesses.map({
+            DispatchQueue.main.async {
+                self.resultKeywordLabel?.text = self.businessResultsViewModel.resultsKeywordText
+            }
+            self.businessesCellViewModels = self.businessResultsViewModel.businesses.map({
                 return BusinessSearchResultCellViewModel(business: $0)
             })
         }
@@ -31,7 +34,6 @@ class BusinessSearchResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.resultKeywordLabel?.text = businessResultsViewModel.resultsKeywordText
         self.resultsTable.delegate = self
         self.resultsTable.dataSource = self
         let resultCellNib = UINib(nibName: "BusinessSearchResultCell", bundle: nil)
@@ -44,12 +46,20 @@ class BusinessSearchResultViewController: UIViewController {
     func seeBusinessDetails(id: String) {
         businessRequestProvider.request(.getBusinessDetails(id: id)) { (result) in
             switch result {
-            case .success:
-                print("Success")
+            case .success(let response):
+                self.presentBusinessDetailsVC(response: JSON(response.data))
             case .failure:
                 print("failed")
             }
         }
+    }
+    
+    func presentBusinessDetailsVC(response: JSON) {
+        let business = try? JSONDecoder().decode(Business.self, from: response.rawData())
+        let businessDetailViewController = BusinessDetailViewController(withTitle: "Details")
+        let businessDetailViewModel = BusinessDetailViewModel(business: business!)
+        self.navigationController?.pushViewController(businessDetailViewController, animated: true)
+        businessDetailViewController.businessDetailViewModel = businessDetailViewModel
     }
 }
 

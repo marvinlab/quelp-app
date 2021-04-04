@@ -10,6 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessDetailViewController" customModule="quelp_app" customModuleProvider="target">
             <connections>
+                <outlet property="addressLabel" destination="fnL-Be-S2S" id="UUO-z1-zRf"/>
+                <outlet property="businessImage" destination="zBA-pH-FA0" id="qvE-oS-XHx"/>
+                <outlet property="businessNameLabel" destination="z7c-l3-V4O" id="gBZ-aD-EiV"/>
+                <outlet property="categoriesLabel" destination="PaB-Ai-jIU" id="AGg-vA-b03"/>
+                <outlet property="mapView" destination="EiM-ue-oQ9" id="md4-Sz-czf"/>
+                <outlet property="openLabel" destination="b41-0Z-JJx" id="71t-OJ-5Lm"/>
+                <outlet property="openSchedLabel" destination="FJy-WQ-5ug" id="xYv-Ao-pGs"/>
+                <outlet property="ratingImage" destination="YEe-n3-ATr" id="tzH-eg-t9y"/>
+                <outlet property="reviewsCountLabel" destination="cCA-Q0-wjR" id="fJY-fd-lCt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,7 +39,7 @@
                                         <constraint firstAttribute="height" constant="229" id="9ZG-2c-1lT"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Macaraig Bakery" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7c-l3-V4O" customClass="AnimatableLabel" customModule="IBAnimatable">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Macaraig Bakery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7c-l3-V4O" customClass="AnimatableLabel" customModule="IBAnimatable">
                                     <rect key="frame" x="8" y="237.00000000000003" width="398" height="41.333333333333343"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                     <nil key="textColor"/>
